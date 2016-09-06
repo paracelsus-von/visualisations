@@ -1,0 +1,12 @@
+=IF(ISNUMBER(SEARCH("[",C1)),LEFT(C1,FIND("[",C1)-1),C1)
+
+Ideas:
+
+Base: Map. Mercator Projection
+Animation: Over time, in years
+Timescale: time speeds up between periods of no info/few deaths (i.e 100BC to 1800)
+time slows down rapidly in 20th century
+Markers: Circles, area (NOT DIAMETER) represents death toll
+Duration of markers: Time-step between years is relative to number of deaths that years
+Growth of markers: Marker does normal animation if deaths occurred in one year
+                   if deaths occurred over multiple years, markers start at 10% and grow till 100% in final year.

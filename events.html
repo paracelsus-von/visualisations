@@ -1,0 +1,2274 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_18221041733143f0b2c28f5c450d6cd5 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_18221041733143f0b2c28f5c450d6cd5" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_18221041733143f0b2c28f5c450d6cd5 = L.map('map_18221041733143f0b2c28f5c450d6cd5', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_e804f393dddc4b3c9f8bf51d8ab50d64 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_18221041733143f0b2c28f5c450d6cd5);
+
+        
+        
+            
+
+            var circle_marker_84f1d0390bd2454e8a9ccddac6fe7ca3 = L.circle(
+                [51.1657,10.4515],
+                1871205.15925,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_7a386934ee4b4fb1bf12d98020cf7984 = L.popup({maxWidth: '300'});
+
+            
+                var html_ee5d68a0aa2e4e4181b1d5dc144dbcb4 = $('         <div id="html_ee5d68a0aa2e4e4181b1d5dc144dbcb4"                 style="width: 100.0%; height: 100.0%;">                 Nazi Ethnic Holocaust Deaths: 11000000</div>                 ')[0];
+                popup_7a386934ee4b4fb1bf12d98020cf7984.setContent(html_ee5d68a0aa2e4e4181b1d5dc144dbcb4);
+            
+
+            circle_marker_84f1d0390bd2454e8a9ccddac6fe7ca3.bindPopup(popup_7a386934ee4b4fb1bf12d98020cf7984);
+
+            
+        
+        
+            
+
+            var circle_marker_08df140d5e8b40f8bbe0b48ce7f7da4a = L.circle(
+                [51.1657,10.4515],
+                1279594.91098,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_243b87eb8a4a4fad9d65e5e30ab4ae5a = L.popup({maxWidth: '300'});
+
+            
+                var html_41c1625f19a64211a199174f7c0f9e3d = $('         <div id="html_41c1625f19a64211a199174f7c0f9e3d"                 style="width: 100.0%; height: 100.0%;">                 Ha Shoah Deaths: 5143928</div>                 ')[0];
+                popup_243b87eb8a4a4fad9d65e5e30ab4ae5a.setContent(html_41c1625f19a64211a199174f7c0f9e3d);
+            
+
+            circle_marker_08df140d5e8b40f8bbe0b48ce7f7da4a.bindPopup(popup_243b87eb8a4a4fad9d65e5e30ab4ae5a);
+
+            
+        
+        
+            
+
+            var circle_marker_9f189b3071d84c1f9391be06c364d7f3 = L.circle(
+                [48.3794,31.1656],
+                1210275.16154,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_7b5790b6080d472280872ad56eec809b = L.popup({maxWidth: '300'});
+
+            
+                var html_71f05a6a25f8475d921ca091943734be = $('         <div id="html_71f05a6a25f8475d921ca091943734be"                 style="width: 100.0%; height: 100.0%;">                 Ukrainian Genocide Deaths: 4601698</div>                 ')[0];
+                popup_7b5790b6080d472280872ad56eec809b.setContent(html_71f05a6a25f8475d921ca091943734be);
+            
+
+            circle_marker_9f189b3071d84c1f9391be06c364d7f3.bindPopup(popup_7b5790b6080d472280872ad56eec809b);
+
+            
+        
+        
+            
+
+            var circle_marker_30d1723b5bac46a6bdd2dd129d9fe266 = L.circle(
+                [51.9194,19.1451],
+                938998.607416,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_ecfcd81693c2468681e8b657d0b4f6bd = L.popup({maxWidth: '300'});
+
+            
+                var html_df72f9404984478793728cd054d9e838 = $('         <div id="html_df72f9404984478793728cd054d9e838"                 style="width: 100.0%; height: 100.0%;">                 Nazi Holocaust against ethnic Poles Deaths: 2770000</div>                 ')[0];
+                popup_ecfcd81693c2468681e8b657d0b4f6bd.setContent(html_df72f9404984478793728cd054d9e838);
+            
+
+            circle_marker_30d1723b5bac46a6bdd2dd129d9fe266.bindPopup(popup_ecfcd81693c2468681e8b657d0b4f6bd);
+
+            
+        
+        
+            
+
+            var circle_marker_08be77a366d24964bd74f8d7ba2d079d = L.circle(
+                [12.5657,104.991],
+                831367.571518,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_37541e5d4e3c49d2a60c96cda8363c9a = L.popup({maxWidth: '300'});
+
+            
+                var html_8badf692b754447d9f9673c2c7d43347 = $('         <div id="html_8badf692b754447d9f9673c2c7d43347"                 style="width: 100.0%; height: 100.0%;">                 Cambodian Holocaust Deaths: 2171381</div>                 ')[0];
+                popup_37541e5d4e3c49d2a60c96cda8363c9a.setContent(html_8badf692b754447d9f9673c2c7d43347);
+            
+
+            circle_marker_08be77a366d24964bd74f8d7ba2d079d.bindPopup(popup_37541e5d4e3c49d2a60c96cda8363c9a);
+
+            
+        
+        
+            
+
+            var circle_marker_5106c8a797374ab0b65ade770fd60a02 = L.circle(
+                [38.9637,35.2433],
+                752190.62061,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_d45048d16742400baa8fbf343faf47eb = L.popup({maxWidth: '300'});
+
+            
+                var html_407da6d91548477798078934236a44c2 = $('         <div id="html_407da6d91548477798078934236a44c2"                 style="width: 100.0%; height: 100.0%;">                 Ottoman EmpireHolocaust. Deaths: 1777484</div>                 ')[0];
+                popup_d45048d16742400baa8fbf343faf47eb.setContent(html_407da6d91548477798078934236a44c2);
+            
+
+            circle_marker_5106c8a797374ab0b65ade770fd60a02.bindPopup(popup_d45048d16742400baa8fbf343faf47eb);
+
+            
+        
+        
+            
+
+            var circle_marker_e69136df3f6a4615994c4a0692a2d962 = L.circle(
+                [61.524,105.3188],
+                624378.444178,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_69df8fe5524b4ad892f25b64674ded11 = L.popup({maxWidth: '300'});
+
+            
+                var html_5f3ae13f458d4b1ea39e0fc15e879be6 = $('         <div id="html_5f3ae13f458d4b1ea39e0fc15e879be6"                 style="width: 100.0%; height: 100.0%;">                 Population transfer in the Soviet Union Deaths: 1224745</div>                 ')[0];
+                popup_69df8fe5524b4ad892f25b64674ded11.setContent(html_5f3ae13f458d4b1ea39e0fc15e879be6);
+            
+
+            circle_marker_e69136df3f6a4615994c4a0692a2d962.bindPopup(popup_69df8fe5524b4ad892f25b64674ded11);
+
+            
+        
+        
+            
+
+            var circle_marker_368febb0f8b94ffc9d0686e728494a24 = L.circle(
+                [52.0055,37.9587],
+                624378.444178,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_fa132b8eb1ba4fb5aabdbe2546e53a10 = L.popup({maxWidth: '300'});
+
+            
+                var html_eef4704a64884789a50784f5e75e2e1e = $('         <div id="html_eef4704a64884789a50784f5e75e2e1e"                 style="width: 100.0%; height: 100.0%;">                 The Ethnic Cleansing of Germans Deaths: 1224745</div>                 ')[0];
+                popup_fa132b8eb1ba4fb5aabdbe2546e53a10.setContent(html_eef4704a64884789a50784f5e75e2e1e);
+            
+
+            circle_marker_368febb0f8b94ffc9d0686e728494a24.bindPopup(popup_fa132b8eb1ba4fb5aabdbe2546e53a10);
+
+            
+        
+        
+            
+
+            var circle_marker_300bc3254200490590e357475586c091 = L.circle(
+                [38.9637,35.2433],
+                590500.612422,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_04881f8e5c71487aaa38dc49806facc3 = L.popup({maxWidth: '300'});
+
+            
+                var html_154c598081e74917833f8f43bb8c1f83 = $('         <div id="html_154c598081e74917833f8f43bb8c1f83"                 style="width: 100.0%; height: 100.0%;">                 Armenian Genocide Medz Yeghern Aghet Deaths: 1095445</div>                 ')[0];
+                popup_04881f8e5c71487aaa38dc49806facc3.setContent(html_154c598081e74917833f8f43bb8c1f83);
+            
+
+            circle_marker_300bc3254200490590e357475586c091.bindPopup(popup_04881f8e5c71487aaa38dc49806facc3);
+
+            
+        
+        
+            
+
+            var circle_marker_0e1b8469a4be434e8e5c128d3687a817 = L.circle(
+                [35.8617,104.1954],
+                564189.583548,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_c4f416e87650486e96e3098659432b64 = L.popup({maxWidth: '300'});
+
+            
+                var html_57c6c51716cb4df18419792f244b5384 = $('         <div id="html_57c6c51716cb4df18419792f244b5384"                 style="width: 100.0%; height: 100.0%;">                 Hakka Genocide by Qing Empire Deaths: 1000000</div>                 ')[0];
+                popup_c4f416e87650486e96e3098659432b64.setContent(html_57c6c51716cb4df18419792f244b5384);
+            
+
+            circle_marker_0e1b8469a4be434e8e5c128d3687a817.bindPopup(popup_c4f416e87650486e96e3098659432b64);
+
+            
+        
+        
+            
+
+            var circle_marker_62d03a4522484dba99411bef86e0f5f6 = L.circle(
+                [37.0902,95.7129],
+                509689.007171,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_fb5d888da6004ed096dcc9f2a50d7116 = L.popup({maxWidth: '300'});
+
+            
+                var html_6d821edf824c493c9639fad9896a5664 = $('         <div id="html_6d821edf824c493c9639fad9896a5664"                 style="width: 100.0%; height: 100.0%;">                 Native American Genocide Deaths: 816132</div>                 ')[0];
+                popup_fb5d888da6004ed096dcc9f2a50d7116.setContent(html_6d821edf824c493c9639fad9896a5664);
+            
+
+            circle_marker_62d03a4522484dba99411bef86e0f5f6.bindPopup(popup_fb5d888da6004ed096dcc9f2a50d7116);
+
+            
+        
+        
+            
+
+            var circle_marker_3493fc4be1294f9a9864f98e654c6b5e = L.circle(
+                [37.0902,95.7129],
+                123294.465547,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_6e78364863384e3786a09cd0a579d320 = L.popup({maxWidth: '300'});
+
+            
+                var html_a76a6766c02b4d0a8f50b93819223225 = $('         <div id="html_a76a6766c02b4d0a8f50b93819223225"                 style="width: 100.0%; height: 100.0%;">                 Siege of Fort Pitt Deaths: 47757</div>                 ')[0];
+                popup_6e78364863384e3786a09cd0a579d320.setContent(html_a76a6766c02b4d0a8f50b93819223225);
+            
+
+            circle_marker_3493fc4be1294f9a9864f98e654c6b5e.bindPopup(popup_6e78364863384e3786a09cd0a579d320);
+
+            
+        
+        
+            
+
+            var circle_marker_73c997a427e245ffb62229ff677e87e9 = L.circle(
+                [-1.9403,29.8739],
+                474425.071734,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_125e36dbd00e4bb7a63656dc8904cc09 = L.popup({maxWidth: '300'});
+
+            
+                var html_2f58026425f0437f831a2b281e57c3ee = $('         <div id="html_2f58026425f0437f831a2b281e57c3ee"                 style="width: 100.0%; height: 100.0%;">                 The 100 Days of Rwandan genocide Deaths: 707107</div>                 ')[0];
+                popup_125e36dbd00e4bb7a63656dc8904cc09.setContent(html_2f58026425f0437f831a2b281e57c3ee);
+            
+
+            circle_marker_73c997a427e245ffb62229ff677e87e9.bindPopup(popup_125e36dbd00e4bb7a63656dc8904cc09);
+
+            
+        
+        
+            
+
+            var circle_marker_17f6c186b0e347408ef0bbd6821e7673 = L.circle(
+                [28.0339,1.6596],
+                474425.071734,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_a1a785f9ed5f4d1b9d5f5d5b75c26231 = L.popup({maxWidth: '300'});
+
+            
+                var html_6311f4b604a54f6690945e72970c1c4f = $('         <div id="html_6311f4b604a54f6690945e72970c1c4f"                 style="width: 100.0%; height: 100.0%;">                 French conquest of Algeria Deaths: 707107</div>                 ')[0];
+                popup_a1a785f9ed5f4d1b9d5f5d5b75c26231.setContent(html_6311f4b604a54f6690945e72970c1c4f);
+            
+
+            circle_marker_17f6c186b0e347408ef0bbd6821e7673.bindPopup(popup_a1a785f9ed5f4d1b9d5f5d5b75c26231);
+
+            
+        
+        
+            
+
+            var circle_marker_eff42d005fcc41f8966512b004a0873a = L.circle(
+                [20.5937,78.9629],
+                448683.627266,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_c579f1057ac340f884d0dd68fb8e4abc = L.popup({maxWidth: '300'});
+
+            
+                var html_5cc3552fa1e946b5b91537f76cdfbfa2 = $('         <div id="html_5cc3552fa1e946b5b91537f76cdfbfa2"                 style="width: 100.0%; height: 100.0%;">                 Genocidal Massacres of the Indian Partition Deaths: 632456</div>                 ')[0];
+                popup_c579f1057ac340f884d0dd68fb8e4abc.setContent(html_5cc3552fa1e946b5b91537f76cdfbfa2);
+            
+
+            circle_marker_eff42d005fcc41f8966512b004a0873a.bindPopup(popup_c579f1057ac340f884d0dd68fb8e4abc);
+
+            
+        
+        
+            
+
+            var circle_marker_efdd64a7519f45c0b2b74a68024c750a = L.circle(
+                [41.2044,74.7661],
+                413307.28312,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_f91fafb0fd5f42729c7f6479e2d9c71b = L.popup({maxWidth: '300'});
+
+            
+                var html_4e5cb3f853e6466d8dc546de8f9cd138 = $('         <div id="html_4e5cb3f853e6466d8dc546de8f9cd138"                 style="width: 100.0%; height: 100.0%;">                 Dzungar genocide Deaths: 536656</div>                 ')[0];
+                popup_f91fafb0fd5f42729c7f6479e2d9c71b.setContent(html_4e5cb3f853e6466d8dc546de8f9cd138);
+            
+
+            circle_marker_efdd64a7519f45c0b2b74a68024c750a.bindPopup(popup_f91fafb0fd5f42729c7f6479e2d9c71b);
+
+            
+        
+        
+            
+
+            var circle_marker_5faad393ea5f49feba4ad150d0bbf655 = L.circle(
+                [38.9637,35.2433],
+                384959.249598,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_27182292f0e64980ab0d5dd4da7454d4 = L.popup({maxWidth: '300'});
+
+            
+                var html_7d19bc8fc2694193892f10e756cb7801 = $('         <div id="html_7d19bc8fc2694193892f10e756cb7801"                 style="width: 100.0%; height: 100.0%;">                 Greek genocide Deaths: 465564</div>                 ')[0];
+                popup_27182292f0e64980ab0d5dd4da7454d4.setContent(html_7d19bc8fc2694193892f10e756cb7801);
+            
+
+            circle_marker_5faad393ea5f49feba4ad150d0bbf655.bindPopup(popup_27182292f0e64980ab0d5dd4da7454d4);
+
+            
+        
+        
+            
+
+            var circle_marker_ac6e7ddaac7a4c06815464e791a2f530 = L.circle(
+                [43.5852,45],
+                377296.484797,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_4d3c49af1bc24aeebc9d8852b47333ba = L.popup({maxWidth: '300'});
+
+            
+                var html_b4cb0646b02b4f3c8e5618fc34db8151 = $('         <div id="html_b4cb0646b02b4f3c8e5618fc34db8151"                 style="width: 100.0%; height: 100.0%;">                 Ethnic cleansing of Circassians Deaths: 447214</div>                 ')[0];
+                popup_4d3c49af1bc24aeebc9d8852b47333ba.setContent(html_b4cb0646b02b4f3c8e5618fc34db8151);
+            
+
+            circle_marker_ac6e7ddaac7a4c06815464e791a2f530.bindPopup(popup_4d3c49af1bc24aeebc9d8852b47333ba);
+
+            
+        
+        
+            
+
+            var circle_marker_1410d6fa86434ac891fd92ffba19e8c6 = L.circle(
+                [43.5912,3.2584],
+                377296.484797,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_b26021214dd1482a931baf02bb8a3e46 = L.popup({maxWidth: '300'});
+
+            
+                var html_cc9cc5a67d274bf49bbebb8c78e361a5 = $('         <div id="html_cc9cc5a67d274bf49bbebb8c78e361a5"                 style="width: 100.0%; height: 100.0%;">                 Albigensian Crusade Deaths: 447214</div>                 ')[0];
+                popup_b26021214dd1482a931baf02bb8a3e46.setContent(html_cc9cc5a67d274bf49bbebb8c78e361a5);
+            
+
+            circle_marker_1410d6fa86434ac891fd92ffba19e8c6.bindPopup(popup_b26021214dd1482a931baf02bb8a3e46);
+
+            
+        
+        
+            
+
+            var circle_marker_ede74d83e8a54be6837cdad3edb98c1b = L.circle(
+                [-14.235,-51.9253],
+                371505.024933,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_354cf0e098ac4ead9cc5caec4b3359e9 = L.popup({maxWidth: '300'});
+
+            
+                var html_235f543fae7d4cd7bde5b7dc431c03c7 = $('         <div id="html_235f543fae7d4cd7bde5b7dc431c03c7"                 style="width: 100.0%; height: 100.0%;">                 Genocide of Native Brazilians Deaths: 433590</div>                 ')[0];
+                popup_354cf0e098ac4ead9cc5caec4b3359e9.setContent(html_235f543fae7d4cd7bde5b7dc431c03c7);
+            
+
+            circle_marker_ede74d83e8a54be6837cdad3edb98c1b.bindPopup(popup_354cf0e098ac4ead9cc5caec4b3359e9);
+
+            
+        
+        
+            
+
+            var circle_marker_ea06cf7982f84599843fedbeddc74e8c = L.circle(
+                [29.6475,91.1175],
+                363756.612596,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_fb570d6240dd4aa7b71f0d332b3044d0 = L.popup({maxWidth: '300'});
+
+            
+                var html_866294839a1941eeae30ea401ab6a83a = $('         <div id="html_866294839a1941eeae30ea401ab6a83a"                 style="width: 100.0%; height: 100.0%;">                 The Chinese Occupation of Tibet Deaths: 415692</div>                 ')[0];
+                popup_fb570d6240dd4aa7b71f0d332b3044d0.setContent(html_866294839a1941eeae30ea401ab6a83a);
+            
+
+            circle_marker_ea06cf7982f84599843fedbeddc74e8c.bindPopup(popup_fb570d6240dd4aa7b71f0d332b3044d0);
+
+            
+        
+        
+            
+
+            var circle_marker_85b2efb489724e17a65e6d38fd0a9b4c = L.circle(
+                [45.1,15.2],
+                351384.592165,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_972e5999ce5544d18eb12fdecd1a42ff = L.popup({maxWidth: '300'});
+
+            
+                var html_0a4b916b228d45deb2799ea7b61da7f6 = $('         <div id="html_0a4b916b228d45deb2799ea7b61da7f6"                 style="width: 100.0%; height: 100.0%;">                 The Holocaust in the Independent State of Croatia Deaths: 387896</div>                 ')[0];
+                popup_972e5999ce5544d18eb12fdecd1a42ff.setContent(html_0a4b916b228d45deb2799ea7b61da7f6);
+            
+
+            circle_marker_85b2efb489724e17a65e6d38fd0a9b4c.bindPopup(popup_972e5999ce5544d18eb12fdecd1a42ff);
+
+            
+        
+        
+            
+
+            var circle_marker_5d08460e666d4fda87c0e7e62489e126 = L.circle(
+                [61.524,105.3188],
+                332062.836934,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_671350c6ea1e453080cbd5c1313507ab = L.popup({maxWidth: '300'});
+
+            
+                var html_9eba19708b6b4c668a7dcb50f69badc0 = $('         <div id="html_9eba19708b6b4c668a7dcb50f69badc0"                 style="width: 100.0%; height: 100.0%;">                 decossackization Deaths: 346410</div>                 ')[0];
+                popup_671350c6ea1e453080cbd5c1313507ab.setContent(html_9eba19708b6b4c668a7dcb50f69badc0);
+            
+
+            circle_marker_5d08460e666d4fda87c0e7e62489e126.bindPopup(popup_671350c6ea1e453080cbd5c1313507ab);
+
+            
+        
+        
+            
+
+            var circle_marker_1b6228558c5b4d86896a8af852b09f4b = L.circle(
+                [51.1657,10.4515],
+                324917.364066,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_6a8c4e7b43504ad68d840153c366cdbc = L.popup({maxWidth: '300'});
+
+            
+                var html_cb2335accc39493a9f3a8a494687158a = $('         <div id="html_cb2335accc39493a9f3a8a494687158a"                 style="width: 100.0%; height: 100.0%;">                 Porajmos Deaths: 331662</div>                 ')[0];
+                popup_6a8c4e7b43504ad68d840153c366cdbc.setContent(html_cb2335accc39493a9f3a8a494687158a);
+            
+
+            circle_marker_1b6228558c5b4d86896a8af852b09f4b.bindPopup(popup_6a8c4e7b43504ad68d840153c366cdbc);
+
+            
+        
+        
+            
+
+            var circle_marker_4014e0cb24b2428da2bddae18058f310 = L.circle(
+                [30.3753,69.3451],
+                298159.649455,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_4be09c6a4cd74be495467cf36cd2d1f9 = L.popup({maxWidth: '300'});
+
+            
+                var html_34c8182e800440b6848ffed45de231ee = $('         <div id="html_34c8182e800440b6848ffed45de231ee"                 style="width: 100.0%; height: 100.0%;">                 1971 Bangladesh genocide Deaths: 279285</div>                 ')[0];
+                popup_4be09c6a4cd74be495467cf36cd2d1f9.setContent(html_34c8182e800440b6848ffed45de231ee);
+            
+
+            circle_marker_4014e0cb24b2428da2bddae18058f310.bindPopup(popup_4be09c6a4cd74be495467cf36cd2d1f9);
+
+            
+        
+        
+            
+
+            var circle_marker_27d3208007ad41088fcc168574b6b8fd = L.circle(
+                [51.9194,19.1451],
+                295250.171448,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_1bc793d16d1f4eb1a7a0544f7595bc94 = L.popup({maxWidth: '300'});
+
+            
+                var html_97e0736551b24294bac7dd35485b126d = $('         <div id="html_97e0736551b24294bac7dd35485b126d"                 style="width: 100.0%; height: 100.0%;">                 Polish Genocide by the Soviet Union Deaths: 273861</div>                 ')[0];
+                popup_1bc793d16d1f4eb1a7a0544f7595bc94.setContent(html_97e0736551b24294bac7dd35485b126d);
+            
+
+            circle_marker_27d3208007ad41088fcc168574b6b8fd.bindPopup(popup_1bc793d16d1f4eb1a7a0544f7595bc94);
+
+            
+        
+        
+            
+
+            var circle_marker_7ca7a3762ac34260a2cdc6ea2533d59f = L.circle(
+                [12.5657,104.991],
+                264594.087797,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_7aed272fb6fc4bbfa8ffd126fcad6645 = L.popup({maxWidth: '300'});
+
+            
+                var html_edd7ce219cad4feea744da61133b26bf = $('         <div id="html_edd7ce219cad4feea744da61133b26bf"                 style="width: 100.0%; height: 100.0%;">                 Chinese Genocide under Khmer Rouge Deaths: 219943</div>                 ')[0];
+                popup_7aed272fb6fc4bbfa8ffd126fcad6645.setContent(html_edd7ce219cad4feea744da61133b26bf);
+            
+
+            circle_marker_7ca7a3762ac34260a2cdc6ea2533d59f.bindPopup(popup_7aed272fb6fc4bbfa8ffd126fcad6645);
+
+            
+        
+        
+            
+
+            var circle_marker_46a74e72e0454f23a2e4566bd2e1e353 = L.circle(
+                [12.5657,104.991],
+                259853.252387,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_631b4b4035df44aeb04b73fbc823caf9 = L.popup({maxWidth: '300'});
+
+            
+                var html_87f7083e42e245edacbbb88e05e5d525 = $('         <div id="html_87f7083e42e245edacbbb88e05e5d525"                 style="width: 100.0%; height: 100.0%;">                 Cham Genocide under Khmer Rouge Deaths: 212132</div>                 ')[0];
+                popup_631b4b4035df44aeb04b73fbc823caf9.setContent(html_87f7083e42e245edacbbb88e05e5d525);
+            
+
+            circle_marker_46a74e72e0454f23a2e4566bd2e1e353.bindPopup(popup_631b4b4035df44aeb04b73fbc823caf9);
+
+            
+        
+        
+            
+
+            var circle_marker_f2c3e0b35ab345c18cf09d286dd41f1b = L.circle(
+                [38.9637,35.2433],
+                259853.252387,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_8c556f78c4904d39b90f5041420039e4 = L.popup({maxWidth: '300'});
+
+            
+                var html_b3882300fb67442597f246fc11126eaf = $('         <div id="html_b3882300fb67442597f246fc11126eaf"                 style="width: 100.0%; height: 100.0%;">                 Assyrian genocide Deaths: 212132</div>                 ')[0];
+                popup_8c556f78c4904d39b90f5041420039e4.setContent(html_b3882300fb67442597f246fc11126eaf);
+            
+
+            circle_marker_f2c3e0b35ab345c18cf09d286dd41f1b.bindPopup(popup_8c556f78c4904d39b90f5041420039e4);
+
+            
+        
+        
+            
+
+            var circle_marker_a3ec7a59c7f84632837bca2d37dfc94b = L.circle(
+                [35.8617,104.1954],
+                252313.252202,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_2ac25f5e7f6c4952820d6bf08aa59f49 = L.popup({maxWidth: '300'});
+
+            
+                var html_5806c85106ee4db48d4416f4378267f1 = $('         <div id="html_5806c85106ee4db48d4416f4378267f1"                 style="width: 100.0%; height: 100.0%;">                 Wu Hu and Jie Genocide Deaths: 200000</div>                 ')[0];
+                popup_2ac25f5e7f6c4952820d6bf08aa59f49.setContent(html_5806c85106ee4db48d4416f4378267f1);
+            
+
+            circle_marker_a3ec7a59c7f84632837bca2d37dfc94b.bindPopup(popup_2ac25f5e7f6c4952820d6bf08aa59f49);
+
+            
+        
+        
+            
+
+            var circle_marker_20cf337748ad4b9f9ac6448152d3a8ce = L.circle(
+                [53.4129,8.2439],
+                252313.252202,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_fe9ec0a08c4c4eacb755fdadb102c385 = L.popup({maxWidth: '300'});
+
+            
+                var html_3c8c7be032ac467983ac040cf4902f47 = $('         <div id="html_3c8c7be032ac467983ac040cf4902f47"                 style="width: 100.0%; height: 100.0%;">                 Cromwellian conquest of Ireland Deaths: 200000</div>                 ')[0];
+                popup_fe9ec0a08c4c4eacb755fdadb102c385.setContent(html_3c8c7be032ac467983ac040cf4902f47);
+            
+
+            circle_marker_20cf337748ad4b9f9ac6448152d3a8ce.bindPopup(popup_fe9ec0a08c4c4eacb755fdadb102c385);
+
+            
+        
+        
+            
+
+            var circle_marker_53670e9f99ad455e893deed1a04da6b4 = L.circle(
+                [19.5,-89],
+                252313.252202,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_1a0ff95b84024473a38ad79fe0201818 = L.popup({maxWidth: '300'});
+
+            
+                var html_cbbc21609a41419b92913f2baf14dcd5 = $('         <div id="html_cbbc21609a41419b92913f2baf14dcd5"                 style="width: 100.0%; height: 100.0%;">                 Caste War of Yucatan Deaths: 200000</div>                 ')[0];
+                popup_1a0ff95b84024473a38ad79fe0201818.setContent(html_cbbc21609a41419b92913f2baf14dcd5);
+            
+
+            circle_marker_53670e9f99ad455e893deed1a04da6b4.bindPopup(popup_1a0ff95b84024473a38ad79fe0201818);
+
+            
+        
+        
+            
+
+            var circle_marker_f7be27c0a6024077bf0bba739e3e7673 = L.circle(
+                [33.8869,9.5375],
+                248274.829875,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_d7765758f77443c2a752242c62387242 = L.popup({maxWidth: '300'});
+
+            
+                var html_14b853c9e937437c988177ae6a283122 = $('         <div id="html_14b853c9e937437c988177ae6a283122"                 style="width: 100.0%; height: 100.0%;">                 Destruction of the Carthaginians Deaths: 193649</div>                 ')[0];
+                popup_d7765758f77443c2a752242c62387242.setContent(html_14b853c9e937437c988177ae6a283122);
+            
+
+            circle_marker_f7be27c0a6024077bf0bba739e3e7673.bindPopup(popup_d7765758f77443c2a752242c62387242);
+
+            
+        
+        
+            
+
+            var circle_marker_19630908717948b3bdd7bcc3ceed0e71 = L.circle(
+                [14.3783,24.9042],
+                231506.861856,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_6a57a210911d45649947e3f3d0fe5cd1 = L.popup({maxWidth: '300'});
+
+            
+                var html_675dd61dcc4c4543bd5506adc28f4c5f = $('         <div id="html_675dd61dcc4c4543bd5506adc28f4c5f"                 style="width: 100.0%; height: 100.0%;">                 Darfurian Genocide Deaths: 168375</div>                 ')[0];
+                popup_6a57a210911d45649947e3f3d0fe5cd1.setContent(html_675dd61dcc4c4543bd5506adc28f4c5f);
+            
+
+            circle_marker_19630908717948b3bdd7bcc3ceed0e71.bindPopup(popup_6a57a210911d45649947e3f3d0fe5cd1);
+
+            
+        
+        
+            
+
+            var circle_marker_df15d504fef54f3193db0a682bb4cb77 = L.circle(
+                [38.9637,35.2433],
+                222063.61534,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_ca7cce49d96740cb9eb0dbae1d4db29f = L.popup({maxWidth: '300'});
+
+            
+                var html_e39fcd901a20482496b4c54f779a69c6 = $('         <div id="html_e39fcd901a20482496b4c54f779a69c6"                 style="width: 100.0%; height: 100.0%;">                 Hamidian Massacres Deaths: 154919</div>                 ')[0];
+                popup_ca7cce49d96740cb9eb0dbae1d4db29f.setContent(html_e39fcd901a20482496b4c54f779a69c6);
+            
+
+            circle_marker_df15d504fef54f3193db0a682bb4cb77.bindPopup(popup_ca7cce49d96740cb9eb0dbae1d4db29f);
+
+            
+        
+        
+            
+
+            var circle_marker_a385b4e2f7af4d09b67c2e9886bf8639 = L.circle(
+                [42.5751,8.1339],
+                206653.64156,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_44f38ef8da7641669be0caff1b58c3c0 = L.popup({maxWidth: '300'});
+
+            
+                var html_f07f92de2bab48fab5ebcdd243b4b028 = $('         <div id="html_f07f92de2bab48fab5ebcdd243b4b028"                 style="width: 100.0%; height: 100.0%;">                 The Volhynian Slaughter of Poles Deaths: 134164</div>                 ')[0];
+                popup_44f38ef8da7641669be0caff1b58c3c0.setContent(html_f07f92de2bab48fab5ebcdd243b4b028);
+            
+
+            circle_marker_a385b4e2f7af4d09b67c2e9886bf8639.bindPopup(popup_44f38ef8da7641669be0caff1b58c3c0);
+
+            
+        
+        
+            
+
+            var circle_marker_564e8e9572244904bdde1fbd51810f97 = L.circle(
+                [61.524,105.3188],
+                191358.435917,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_b85f8582094b41d6bdbc874b8278294b = L.popup({maxWidth: '300'});
+
+            
+                var html_e58eac60a712485a84c983665d6e7a53 = $('         <div id="html_e58eac60a712485a84c983665d6e7a53"                 style="width: 100.0%; height: 100.0%;">                 Anti-Jewish pogroms in the Russian Empire Deaths: 115039</div>                 ')[0];
+                popup_b85f8582094b41d6bdbc874b8278294b.setContent(html_e58eac60a712485a84c983665d6e7a53);
+            
+
+            circle_marker_564e8e9572244904bdde1fbd51810f97.bindPopup(popup_b85f8582094b41d6bdbc874b8278294b);
+
+            
+        
+        
+            
+
+            var circle_marker_8997d461902248359afe92ad23df786e = L.circle(
+                [61.524,105.3188],
+                178412.411615,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_a92f2c4629f04ba3b23a069c3fefbdb8 = L.popup({maxWidth: '300'});
+
+            
+                var html_beef6e72c55d4a42ba28a359c917d6a0 = $('         <div id="html_beef6e72c55d4a42ba28a359c917d6a0"                 style="width: 100.0%; height: 100.0%;">                 Deportation of the Crimean Tatars Deaths: 100000</div>                 ')[0];
+                popup_a92f2c4629f04ba3b23a069c3fefbdb8.setContent(html_beef6e72c55d4a42ba28a359c917d6a0);
+            
+
+            circle_marker_8997d461902248359afe92ad23df786e.bindPopup(popup_a92f2c4629f04ba3b23a069c3fefbdb8);
+
+            
+        
+        
+            
+
+            var circle_marker_b043b650a30b432e96f32bd5473a3264 = L.circle(
+                [33.2232,43.6793],
+                174255.138468,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_d9cd4010e0bd40c0a5ffdd1a30244afc = L.popup({maxWidth: '300'});
+
+            
+                var html_dd7d5c5a98894cbf9fc6d15d8f41b120 = $('         <div id="html_dd7d5c5a98894cbf9fc6d15d8f41b120"                 style="width: 100.0%; height: 100.0%;">                 Al-Anfal campaign Deaths: 95394</div>                 ')[0];
+                popup_d9cd4010e0bd40c0a5ffdd1a30244afc.setContent(html_dd7d5c5a98894cbf9fc6d15d8f41b120);
+            
+
+            circle_marker_b043b650a30b432e96f32bd5473a3264.bindPopup(popup_d9cd4010e0bd40c0a5ffdd1a30244afc);
+
+            
+        
+        
+            
+
+            var circle_marker_6b515b1daef143f284d0f82ad39e0577 = L.circle(
+                [15.7835,-90.2308],
+                171081.595575,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_276592f58f8c40d38e2487826e295ec0 = L.popup({maxWidth: '300'});
+
+            
+                var html_dd6f9b7e20974dbcaf87bb2245e6e1fd = $('         <div id="html_dd6f9b7e20974dbcaf87bb2245e6e1fd"                 style="width: 100.0%; height: 100.0%;">                 Genocide and other Atrocities during the Guatemalan Civil War Deaths: 91951</div>                 ')[0];
+                popup_276592f58f8c40d38e2487826e295ec0.setContent(html_dd6f9b7e20974dbcaf87bb2245e6e1fd);
+            
+
+            circle_marker_6b515b1daef143f284d0f82ad39e0577.bindPopup(popup_276592f58f8c40d38e2487826e295ec0);
+
+            
+        
+        
+            
+
+            var circle_marker_d4e26842e9974430b294b6b5d30e47de = L.circle(
+                [51.1657,10.4515],
+                160638.556558,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_bb2eb4ec50314caeb86e854e7407d85d = L.popup({maxWidth: '300'});
+
+            
+                var html_1a70ca73e57b43e489d688198b8b6a9d = $('         <div id="html_1a70ca73e57b43e489d688198b8b6a9d"                 style="width: 100.0%; height: 100.0%;">                 Aktion T4 Deaths: 81068</div>                 ')[0];
+                popup_bb2eb4ec50314caeb86e854e7407d85d.setContent(html_1a70ca73e57b43e489d688198b8b6a9d);
+            
+
+            circle_marker_d4e26842e9974430b294b6b5d30e47de.bindPopup(popup_bb2eb4ec50314caeb86e854e7407d85d);
+
+            
+        
+        
+            
+
+            var circle_marker_523523b0abe849a18c3824f67c97ca71 = L.circle(
+                [3.3731,29.9189],
+                159576.912161,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_ef83fec389bd4b3cb26b115a4e21de06 = L.popup({maxWidth: '300'});
+
+            
+                var html_f5f8a6671e44404ab572822e61d95e2b = $('         <div id="html_f5f8a6671e44404ab572822e61d95e2b"                 style="width: 100.0%; height: 100.0%;">                 Rwandan Revolution Deaths: 80000</div>                 ')[0];
+                popup_ef83fec389bd4b3cb26b115a4e21de06.setContent(html_f5f8a6671e44404ab572822e61d95e2b);
+            
+
+            circle_marker_523523b0abe849a18c3824f67c97ca71.bindPopup(popup_ef83fec389bd4b3cb26b115a4e21de06);
+
+            
+        
+        
+            
+
+            var circle_marker_1d5382dd41ef4dd29f9f626305b582c4 = L.circle(
+                [51.9194,19.1451],
+                132039.649674,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_5d0eae9560f54ae5966c4c5b7dae6995 = L.popup({maxWidth: '300'});
+
+            
+                var html_6eadbfb7e8e045ffb46b93c4ced31d76 = $('         <div id="html_6eadbfb7e8e045ffb46b93c4ced31d76"                 style="width: 100.0%; height: 100.0%;">                 Warsaw Uprising Deaths: 54772</div>                 ')[0];
+                popup_5d0eae9560f54ae5966c4c5b7dae6995.setContent(html_6eadbfb7e8e045ffb46b93c4ced31d76);
+            
+
+            circle_marker_1d5382dd41ef4dd29f9f626305b582c4.bindPopup(popup_5d0eae9560f54ae5966c4c5b7dae6995);
+
+            
+        
+        
+            
+
+            var circle_marker_07f29780add940408c85a7a0aee95171 = L.circle(
+                [-20,30],
+                124875.943737,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_e5d4393ef33349729eb806ffa4f165cc = L.popup({maxWidth: '300'});
+
+            
+                var html_a5e2d1a925514b1789184bfde33b66fe = $('         <div id="html_a5e2d1a925514b1789184bfde33b66fe"                 style="width: 100.0%; height: 100.0%;">                 Herero genocide Deaths: 48990</div>                 ')[0];
+                popup_e5d4393ef33349729eb806ffa4f165cc.setContent(html_a5e2d1a925514b1789184bfde33b66fe);
+            
+
+            circle_marker_07f29780add940408c85a7a0aee95171.bindPopup(popup_e5d4393ef33349729eb806ffa4f165cc);
+
+            
+        
+        
+            
+
+            var circle_marker_b85bac21b4e4458cb0c644c37878229c = L.circle(
+                [54.526,15.2551],
+                119311.090935,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_ef7283013b8e49b99fbaa4a4533eecf5 = L.popup({maxWidth: '300'});
+
+            
+                var html_7ab4d783f5a64299ab2a644f0dd874df = $('         <div id="html_7ab4d783f5a64299ab2a644f0dd874df"                 style="width: 100.0%; height: 100.0%;">                 Witch trials in the early modern period Deaths: 44721</div>                 ')[0];
+                popup_ef7283013b8e49b99fbaa4a4533eecf5.setContent(html_7ab4d783f5a64299ab2a644f0dd874df);
+            
+
+            circle_marker_b85bac21b4e4458cb0c644c37878229c.bindPopup(popup_ef7283013b8e49b99fbaa4a4533eecf5);
+
+            
+        
+        
+            
+
+            var circle_marker_ea7bce762ce44e478930d6a175948a02 = L.circle(
+                [43.9159,17.6791],
+                111394.229173,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_3489cfdedc6a47059fcee6c85812a7ca = L.popup({maxWidth: '300'});
+
+            
+                var html_397d0c78525744c8adf1f523472ed806 = $('         <div id="html_397d0c78525744c8adf1f523472ed806"                 style="width: 100.0%; height: 100.0%;">                 Ethnic cleansingand Genocidefrom all sides of the Bosnian War Deaths: 38983</div>                 ')[0];
+                popup_3489cfdedc6a47059fcee6c85812a7ca.setContent(html_397d0c78525744c8adf1f523472ed806);
+            
+
+            circle_marker_ea7bce762ce44e478930d6a175948a02.bindPopup(popup_3489cfdedc6a47059fcee6c85812a7ca);
+
+            
+        
+        
+            
+
+            var circle_marker_11a3037a3f6a46fe8e3c65ef05a086e2 = L.circle(
+                [38.4237,27.1428],
+                100329.026362,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_8837c89bbe5d485eacc584fab804d7b5 = L.popup({maxWidth: '300'});
+
+            
+                var html_3e4aced903a543efba17c45774b54aa5 = $('         <div id="html_3e4aced903a543efba17c45774b54aa5"                 style="width: 100.0%; height: 100.0%;">                 Great Fire of Smyrna Deaths: 31623</div>                 ')[0];
+                popup_8837c89bbe5d485eacc584fab804d7b5.setContent(html_3e4aced903a543efba17c45774b54aa5);
+            
+
+            circle_marker_11a3037a3f6a46fe8e3c65ef05a086e2.bindPopup(popup_8837c89bbe5d485eacc584fab804d7b5);
+
+            
+        
+        
+            
+
+            var circle_marker_44acd3ae2eca431199b017c18fbadd4b = L.circle(
+                [41.2044,74.7661],
+                95179.3011153,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_33371ccc82cd4dd38ce6a3d7c061b33a = L.popup({maxWidth: '300'});
+
+            
+                var html_b8116a319bcb42f9b3cf8b866473d02a = $('         <div id="html_b8116a319bcb42f9b3cf8b866473d02a"                 style="width: 100.0%; height: 100.0%;">                 Urkun Deaths: 28460</div>                 ')[0];
+                popup_33371ccc82cd4dd38ce6a3d7c061b33a.setContent(html_b8116a319bcb42f9b3cf8b866473d02a);
+            
+
+            circle_marker_44acd3ae2eca431199b017c18fbadd4b.bindPopup(popup_33371ccc82cd4dd38ce6a3d7c061b33a);
+
+            
+        
+        
+            
+
+            var circle_marker_9eccaf54bb4a4a9597fafc3d04338690 = L.circle(
+                [12.4216,76.6931],
+                90085.0184451,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_f77eb34a5fbd47a790daf1ca081e37b6 = L.popup({maxWidth: '300'});
+
+            
+                var html_6fb7762b74914ff6a7fbb5dd2684eb81 = $('         <div id="html_6fb7762b74914ff6a7fbb5dd2684eb81"                 style="width: 100.0%; height: 100.0%;">                 Captivity of Mangalorean Catholics at Seringapatam Deaths: 25495</div>                 ')[0];
+                popup_f77eb34a5fbd47a790daf1ca081e37b6.setContent(html_6fb7762b74914ff6a7fbb5dd2684eb81);
+            
+
+            circle_marker_9eccaf54bb4a4a9597fafc3d04338690.bindPopup(popup_f77eb34a5fbd47a790daf1ca081e37b6);
+
+            
+        
+        
+            
+
+            var circle_marker_297dd93c705b44c5a68ecc82231a7909 = L.circle(
+                [-25.2744,133.7751],
+                84155.0750561,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_32ed6ef23959461fb7a82d9ccb480198 = L.popup({maxWidth: '300'});
+
+            
+                var html_15dfdfdee311454d8b2d14805fc8530a = $('         <div id="html_15dfdfdee311454d8b2d14805fc8530a"                 style="width: 100.0%; height: 100.0%;">                 Australian frontier wars Deaths: 22249</div>                 ')[0];
+                popup_32ed6ef23959461fb7a82d9ccb480198.setContent(html_15dfdfdee311454d8b2d14805fc8530a);
+            
+
+            circle_marker_297dd93c705b44c5a68ecc82231a7909.bindPopup(popup_32ed6ef23959461fb7a82d9ccb480198);
+
+            
+        
+        
+            
+
+            var circle_marker_bfb2140f59e240a9a9fc2936a488edeb = L.circle(
+                [43.0016,41.0234],
+                83334.0673847,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_b92b948ee27f4fa4a6691d3b6eaa4241 = L.popup({maxWidth: '300'});
+
+            
+                var html_36c9355152c34bb998438bf89ad1d6a3 = $('         <div id="html_36c9355152c34bb998438bf89ad1d6a3"                 style="width: 100.0%; height: 100.0%;">                 Ethnic cleansing of Georgians Deaths: 21817</div>                 ')[0];
+                popup_b92b948ee27f4fa4a6691d3b6eaa4241.setContent(html_36c9355152c34bb998438bf89ad1d6a3);
+            
+
+            circle_marker_bfb2140f59e240a9a9fc2936a488edeb.bindPopup(popup_b92b948ee27f4fa4a6691d3b6eaa4241);
+
+            
+        
+        
+            
+
+            var circle_marker_9046b32b488f48c5bb0d140129bfe606 = L.circle(
+                [39.3074,39.4388],
+                74483.7096706,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_25c5bea546484b09bdcda315dac98989 = L.popup({maxWidth: '300'});
+
+            
+                var html_0fc39dda0f6c41b096773a69b4f2e8fd = $('         <div id="html_0fc39dda0f6c41b096773a69b4f2e8fd"                 style="width: 100.0%; height: 100.0%;">                 Dersim Massacre Deaths: 17429</div>                 ')[0];
+                popup_25c5bea546484b09bdcda315dac98989.setContent(html_0fc39dda0f6c41b096773a69b4f2e8fd);
+            
+
+            circle_marker_9046b32b488f48c5bb0d140129bfe606.bindPopup(popup_25c5bea546484b09bdcda315dac98989);
+
+            
+        
+        
+            
+
+            var circle_marker_8a99327066b2461aa0d6441d75c08cb7 = L.circle(
+                [56.1304,-106.3468],
+                74250.4358822,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_132c3a0915e946d2b7e7f43014a209f9 = L.popup({maxWidth: '300'});
+
+            
+                var html_e89bef3e2d7642fc93fa2c4ff721bbe4 = $('         <div id="html_e89bef3e2d7642fc93fa2c4ff721bbe4"                 style="width: 100.0%; height: 100.0%;">                 Canadian Indian residential school system Deaths: 17320</div>                 ')[0];
+                popup_132c3a0915e946d2b7e7f43014a209f9.setContent(html_e89bef3e2d7642fc93fa2c4ff721bbe4);
+            
+
+            circle_marker_8a99327066b2461aa0d6441d75c08cb7.bindPopup(popup_132c3a0915e946d2b7e7f43014a209f9);
+
+            
+        
+        
+            
+
+            var circle_marker_9409aa6a512e4fe799e458a9ceb8e6db = L.circle(
+                [37.0902,95.7129],
+                72139.0901607,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_6e340ed732254f59a10500310e57b6ca = L.popup({maxWidth: '300'});
+
+            
+                var html_18b0c2fe6957476cb69122dfdbb5caad = $('         <div id="html_18b0c2fe6957476cb69122dfdbb5caad"                 style="width: 100.0%; height: 100.0%;">                 Indian Massacres Deaths: 16349</div>                 ')[0];
+                popup_6e340ed732254f59a10500310e57b6ca.setContent(html_18b0c2fe6957476cb69122dfdbb5caad);
+            
+
+            circle_marker_9409aa6a512e4fe799e458a9ceb8e6db.bindPopup(popup_6e340ed732254f59a10500310e57b6ca);
+
+            
+        
+        
+            
+
+            var circle_marker_454111fbd9904cb795a9efb2490730b6 = L.circle(
+                [-19.0154,29.1549],
+                58106.0492785,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_ca005e69ed78417bad71837bf783da79 = L.popup({maxWidth: '300'});
+
+            
+                var html_6e4e477c7c2d485bbf7784ab29578310 = $('         <div id="html_6e4e477c7c2d485bbf7784ab29578310"                 style="width: 100.0%; height: 100.0%;">                 Gukurahundi Deaths: 10607</div>                 ')[0];
+                popup_ca005e69ed78417bad71837bf783da79.setContent(html_6e4e477c7c2d485bbf7784ab29578310);
+            
+
+            circle_marker_454111fbd9904cb795a9efb2490730b6.bindPopup(popup_ca005e69ed78417bad71837bf783da79);
+
+            
+        
+        
+            
+
+            var circle_marker_c8ab60817be94fccbd3996944048c14d = L.circle(
+                [12.5657,104.991],
+                56418.9583548,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_919a66ddf9944d2b818474568cceee6c = L.popup({maxWidth: '300'});
+
+            
+                var html_49a830caf76d4ebab036631929643010 = $('         <div id="html_49a830caf76d4ebab036631929643010"                 style="width: 100.0%; height: 100.0%;">                 Vietnamese Genocide by Khmer Rouge Deaths: 10000</div>                 ')[0];
+                popup_919a66ddf9944d2b818474568cceee6c.setContent(html_49a830caf76d4ebab036631929643010);
+            
+
+            circle_marker_c8ab60817be94fccbd3996944048c14d.bindPopup(popup_919a66ddf9944d2b818474568cceee6c);
+
+            
+        
+        
+            
+
+            var circle_marker_f635d382019a462e86a4c6ba16c69ad5 = L.circle(
+                [-20,30],
+                56418.9583548,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_2b95cabd84ba4b9bb78235a62567d1b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_0c0809b2724f45d0880496f670e65243 = $('         <div id="html_0c0809b2724f45d0880496f670e65243"                 style="width: 100.0%; height: 100.0%;">                 Namaqua genocide Deaths: 10000</div>                 ')[0];
+                popup_2b95cabd84ba4b9bb78235a62567d1b0.setContent(html_0c0809b2724f45d0880496f670e65243);
+            
+
+            circle_marker_f635d382019a462e86a4c6ba16c69ad5.bindPopup(popup_2b95cabd84ba4b9bb78235a62567d1b0);
+
+            
+        
+        
+            
+
+            var circle_marker_c3dd75d70319409e97d45c146ada656b = L.circle(
+                [25.0961,85.3131],
+                49655.0941836,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_77407b8541534650a4a4b8721d2acb3c = L.popup({maxWidth: '300'});
+
+            
+                var html_dc36089fec6243a58a29ec42777bffb1 = $('         <div id="html_dc36089fec6243a58a29ec42777bffb1"                 style="width: 100.0%; height: 100.0%;">                 1946 Bihar riots Deaths: 7746</div>                 ')[0];
+                popup_77407b8541534650a4a4b8721d2acb3c.setContent(html_dc36089fec6243a58a29ec42777bffb1);
+            
+
+            circle_marker_c3dd75d70319409e97d45c146ada656b.bindPopup(popup_77407b8541534650a4a4b8721d2acb3c);
+
+            
+        
+        
+            
+
+            var circle_marker_2446f0e974a34eaa81df0713bd5bdcf1 = L.circle(
+                [22.8724,91.0973],
+                47442.2723445,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_76ab98294cf94ce6b7aa07b76edef5c2 = L.popup({maxWidth: '300'});
+
+            
+                var html_4d9194ff50eb4ef5961ac35fa50ab661 = $('         <div id="html_4d9194ff50eb4ef5961ac35fa50ab661"                 style="width: 100.0%; height: 100.0%;">                 Noakhali riots Deaths: 7071</div>                 ')[0];
+                popup_76ab98294cf94ce6b7aa07b76edef5c2.setContent(html_4d9194ff50eb4ef5961ac35fa50ab661);
+            
+
+            circle_marker_2446f0e974a34eaa81df0713bd5bdcf1.bindPopup(popup_76ab98294cf94ce6b7aa07b76edef5c2);
+
+            
+        
+        
+            
+
+            var circle_marker_bcc5872d75364c018350daa5a8d2343c = L.circle(
+                [28.0339,1.6596],
+                46438.6636209,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_42ff92a52f75438f955a2d3bf4ba5c99 = L.popup({maxWidth: '300'});
+
+            
+                var html_8d246191354b47a7b7b4ee5040d3f9e6 = $('         <div id="html_8d246191354b47a7b7b4ee5040d3f9e6"                 style="width: 100.0%; height: 100.0%;">                 Algerian Massacres by the French Deaths: 6775</div>                 ')[0];
+                popup_42ff92a52f75438f955a2d3bf4ba5c99.setContent(html_8d246191354b47a7b7b4ee5040d3f9e6);
+            
+
+            circle_marker_bcc5872d75364c018350daa5a8d2343c.bindPopup(popup_42ff92a52f75438f955a2d3bf4ba5c99);
+
+            
+        
+        
+            
+
+            var circle_marker_b444742ee8e044759f10a512895c8c63 = L.circle(
+                [-25.2744,133.7751],
+                46208.4701816,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_28343872c2ca498199124a7c53fc16ec = L.popup({maxWidth: '300'});
+
+            
+                var html_a0d2035a3abf44ab89cdffa6c6099435 = $('         <div id="html_a0d2035a3abf44ab89cdffa6c6099435"                 style="width: 100.0%; height: 100.0%;">                 Tasmanian Extinction Deaths: 6708</div>                 ')[0];
+                popup_28343872c2ca498199124a7c53fc16ec.setContent(html_a0d2035a3abf44ab89cdffa6c6099435);
+            
+
+            circle_marker_b444742ee8e044759f10a512895c8c63.bindPopup(popup_28343872c2ca498199124a7c53fc16ec);
+
+            
+        
+        
+            
+
+            var circle_marker_4124d2682be84aecac463983eafac4ab = L.circle(
+                [-25.2744,133.7751],
+                16717.5380983,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_f80501cb68d74fc2a730370dab68d13f = L.popup({maxWidth: '300'});
+
+            
+                var html_2988758ccbe641fb9e1b1239ef71bfa0 = $('         <div id="html_2988758ccbe641fb9e1b1239ef71bfa0"                 style="width: 100.0%; height: 100.0%;">                 Black War Deaths: 878</div>                 ')[0];
+                popup_f80501cb68d74fc2a730370dab68d13f.setContent(html_2988758ccbe641fb9e1b1239ef71bfa0);
+            
+
+            circle_marker_4124d2682be84aecac463983eafac4ab.bindPopup(popup_f80501cb68d74fc2a730370dab68d13f);
+
+            
+        
+        
+            
+
+            var circle_marker_dce6f067e6f84ae3ad6de2bfa34fa6dc = L.circle(
+                [-6.1659,39.2026],
+                44869.9234467,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_c80579afc46f491a8895512e3d2be9af = L.popup({maxWidth: '300'});
+
+            
+                var html_59342ef5f6624d4e837d4da966bb07c0 = $('         <div id="html_59342ef5f6624d4e837d4da966bb07c0"                 style="width: 100.0%; height: 100.0%;">                 Zanzibar Revolution Deaths: 6325</div>                 ')[0];
+                popup_c80579afc46f491a8895512e3d2be9af.setContent(html_59342ef5f6624d4e837d4da966bb07c0);
+            
+
+            circle_marker_dce6f067e6f84ae3ad6de2bfa34fa6dc.bindPopup(popup_c80579afc46f491a8895512e3d2be9af);
+
+            
+        
+        
+            
+
+            var circle_marker_d1f6d0da495c4c45b7f7d16468372499 = L.circle(
+                [30.3753,69.3451],
+                42370.6001619,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_339adb01872643d898b3df957b617ee9 = L.popup({maxWidth: '300'});
+
+            
+                var html_e713b487b8e044af881bfa174513c992 = $('         <div id="html_e713b487b8e044af881bfa174513c992"                 style="width: 100.0%; height: 100.0%;">                 1964 East Pakistan riots Deaths: 5640</div>                 ')[0];
+                popup_339adb01872643d898b3df957b617ee9.setContent(html_e713b487b8e044af881bfa174513c992);
+            
+
+            circle_marker_d1f6d0da495c4c45b7f7d16468372499.bindPopup(popup_339adb01872643d898b3df957b617ee9);
+
+            
+        
+        
+            
+
+            var circle_marker_7be47e2d64034ff78f184ce70cb7835e = L.circle(
+                [33.2232,43.6793],
+                41753.8411003,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_cb8a4ef6d9a8490e8919c96065e740f4 = L.popup({maxWidth: '300'});
+
+            
+                var html_1bb2896b5b044badb3711d83327b6a70 = $('         <div id="html_1bb2896b5b044badb3711d83327b6a70"                 style="width: 100.0%; height: 100.0%;">                 Simele massacre Deaths: 5477</div>                 ')[0];
+                popup_cb8a4ef6d9a8490e8919c96065e740f4.setContent(html_1bb2896b5b044badb3711d83327b6a70);
+            
+
+            circle_marker_7be47e2d64034ff78f184ce70cb7835e.bindPopup(popup_cb8a4ef6d9a8490e8919c96065e740f4);
+
+            
+        
+        
+            
+
+            var circle_marker_ff5f5d4bd5174da3bdab857edfe122e2 = L.circle(
+                [33.2232,43.6793],
+                39894.2280401,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_a475356bf6f9497981d385e20a3b1424 = L.popup({maxWidth: '300'});
+
+            
+                var html_59c37e3f473046ff97379660385f460e = $('         <div id="html_59c37e3f473046ff97379660385f460e"                 style="width: 100.0%; height: 100.0%;">                 Genocide of Yazidis by ISIL Deaths: 5000</div>                 ')[0];
+                popup_a475356bf6f9497981d385e20a3b1424.setContent(html_59c37e3f473046ff97379660385f460e);
+            
+
+            circle_marker_ff5f5d4bd5174da3bdab857edfe122e2.bindPopup(popup_a475356bf6f9497981d385e20a3b1424);
+
+            
+        
+        
+            
+
+            var circle_marker_0d56de7b2ae34c0289282c592b867874 = L.circle(
+                [20.5937,78.9629],
+                38814.4392116,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_1861348973ae44d5980f19be5c1f9b88 = L.popup({maxWidth: '300'});
+
+            
+                var html_f8bbedf11cdb4aafbe7503489a31817f = $('         <div id="html_f8bbedf11cdb4aafbe7503489a31817f"                 style="width: 100.0%; height: 100.0%;">                 1984 Sikh Massacre Deaths: 4733</div>                 ')[0];
+                popup_1861348973ae44d5980f19be5c1f9b88.setContent(html_f8bbedf11cdb4aafbe7503489a31817f);
+            
+
+            circle_marker_0d56de7b2ae34c0289282c592b867874.bindPopup(popup_1861348973ae44d5980f19be5c1f9b88);
+
+            
+        
+        
+            
+
+            var circle_marker_b50bc14caad94f52ac609f652265baea = L.circle(
+                [26.2006,92.9376],
+                38600.6292336,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_43aa421d37ca41de8fe2eaf9bdb7c459 = L.popup({maxWidth: '300'});
+
+            
+                var html_61c8e857597d474294a3f9f682138ce8 = $('         <div id="html_61c8e857597d474294a3f9f682138ce8"                 style="width: 100.0%; height: 100.0%;">                 Nellie massacre Deaths: 4681</div>                 ')[0];
+                popup_43aa421d37ca41de8fe2eaf9bdb7c459.setContent(html_61c8e857597d474294a3f9f682138ce8);
+            
+
+            circle_marker_b50bc14caad94f52ac609f652265baea.bindPopup(popup_43aa421d37ca41de8fe2eaf9bdb7c459);
+
+            
+        
+        
+            
+
+            var circle_marker_fccb89a19beb415ba398b6518ab4cd48 = L.circle(
+                [12.5657,104.991],
+                35682.4823231,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_25b33eb84f8d45eaad6f059dc56e007f = L.popup({maxWidth: '300'});
+
+            
+                var html_faa075cd75db484d8ab7668b6824f806 = $('         <div id="html_faa075cd75db484d8ab7668b6824f806"                 style="width: 100.0%; height: 100.0%;">                 Laotian Genocide byKhmer Rouge Deaths: 4000</div>                 ')[0];
+                popup_25b33eb84f8d45eaad6f059dc56e007f.setContent(html_faa075cd75db484d8ab7668b6824f806);
+            
+
+            circle_marker_fccb89a19beb415ba398b6518ab4cd48.bindPopup(popup_25b33eb84f8d45eaad6f059dc56e007f);
+
+            
+        
+        
+            
+
+            var circle_marker_eaffc2b91b5f42c4a4afb6d74274e97a = L.circle(
+                [20.5937,78.9629],
+                35682.4823231,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_bd79f7b04c5e4d9a905f6930c8b24c19 = L.popup({maxWidth: '300'});
+
+            
+                var html_751716471b3e415a984f3d1d41e9180b = $('         <div id="html_751716471b3e415a984f3d1d41e9180b"                 style="width: 100.0%; height: 100.0%;">                 Direct Action Day Deaths: 4000</div>                 ')[0];
+                popup_bd79f7b04c5e4d9a905f6930c8b24c19.setContent(html_751716471b3e415a984f3d1d41e9180b);
+            
+
+            circle_marker_eaffc2b91b5f42c4a4afb6d74274e97a.bindPopup(popup_bd79f7b04c5e4d9a905f6930c8b24c19);
+
+            
+        
+        
+            
+
+            var circle_marker_d7bd572684e74b9a98472f251aa59699 = L.circle(
+                [18.9712,72.2852],
+                35111.4538177,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_64a6aabc22bb40bbbd3ee0f398d9bc37 = L.popup({maxWidth: '300'});
+
+            
+                var html_a0e4f567e6d14ff291b9d0432c63b84a = $('         <div id="html_a0e4f567e6d14ff291b9d0432c63b84a"                 style="width: 100.0%; height: 100.0%;">                 1804 Haiti massacre Deaths: 3873</div>                 ')[0];
+                popup_64a6aabc22bb40bbbd3ee0f398d9bc37.setContent(html_a0e4f567e6d14ff291b9d0432c63b84a);
+            
+
+            circle_marker_d7bd572684e74b9a98472f251aa59699.bindPopup(popup_64a6aabc22bb40bbbd3ee0f398d9bc37);
+
+            
+        
+        
+            
+
+            var circle_marker_04eda6e566e94bbb9274c7b6a07c0a25 = L.circle(
+                [37.0902,95.7129],
+                33205.8043983,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_e397156036ba4726b164a2db256995a6 = L.popup({maxWidth: '300'});
+
+            
+                var html_3b5dee5cc96a41d59b8a53c2853a5625 = $('         <div id="html_3b5dee5cc96a41d59b8a53c2853a5625"                 style="width: 100.0%; height: 100.0%;">                 Trail of Tears Deaths: 3464</div>                 ')[0];
+                popup_e397156036ba4726b164a2db256995a6.setContent(html_3b5dee5cc96a41d59b8a53c2853a5625);
+            
+
+            circle_marker_04eda6e566e94bbb9274c7b6a07c0a25.bindPopup(popup_e397156036ba4726b164a2db256995a6);
+
+            
+        
+        
+            
+
+            var circle_marker_09473494324c47c5a145b1fdda052804 = L.circle(
+                [-54,-70],
+                31524.0140951,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_16cadae03daf4d00b3427008be0363dd = L.popup({maxWidth: '300'});
+
+            
+                var html_ff060ad678bd40fa8237c2346bef418d = $('         <div id="html_ff060ad678bd40fa8237c2346bef418d"                 style="width: 100.0%; height: 100.0%;">                 Selknam genocide Deaths: 3122</div>                 ')[0];
+                popup_16cadae03daf4d00b3427008be0363dd.setContent(html_ff060ad678bd40fa8237c2346bef418d);
+            
+
+            circle_marker_09473494324c47c5a145b1fdda052804.bindPopup(popup_16cadae03daf4d00b3427008be0363dd);
+
+            
+        
+        
+            
+
+            var circle_marker_b3095dc55e764e39b2b9ed6616bcc379 = L.circle(
+                [18.7357,-70.1627],
+                28657.2766737,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_bba75d23ce5d47268c58dcb23fc16e49 = L.popup({maxWidth: '300'});
+
+            
+                var html_424dcc11539e432d82f788477237a55d = $('         <div id="html_424dcc11539e432d82f788477237a55d"                 style="width: 100.0%; height: 100.0%;">                 Parsley Massacre Deaths: 2580</div>                 ')[0];
+                popup_bba75d23ce5d47268c58dcb23fc16e49.setContent(html_424dcc11539e432d82f788477237a55d);
+            
+
+            circle_marker_b3095dc55e764e39b2b9ed6616bcc379.bindPopup(popup_bba75d23ce5d47268c58dcb23fc16e49);
+
+            
+        
+        
+            
+
+            var circle_marker_01012374a3144de28d80bca8ee3e6f74 = L.circle(
+                [22.2587,71.1924],
+                23689.2450142,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_696206ff233447c8b9ccdd08745cc57c = L.popup({maxWidth: '300'});
+
+            
+                var html_11f7f8fa223b430088b2d646da7732b2 = $('         <div id="html_11f7f8fa223b430088b2d646da7732b2"                 style="width: 100.0%; height: 100.0%;">                 2002 Gujarat riots Deaths: 1763</div>                 ')[0];
+                popup_696206ff233447c8b9ccdd08745cc57c.setContent(html_11f7f8fa223b430088b2d646da7732b2);
+            
+
+            circle_marker_01012374a3144de28d80bca8ee3e6f74.bindPopup(popup_696206ff233447c8b9ccdd08745cc57c);
+
+            
+        
+        
+            
+
+            var circle_marker_e9581ae20b694cd783eb4f57ee85808b = L.circle(
+                [33.2232,43.6793],
+                23262.1324584,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_ba7a29288a0e49fba7bd8570de1f774d = L.popup({maxWidth: '300'});
+
+            
+                var html_08ae2947a66b47cc892a2acaf6ffd565 = $('         <div id="html_08ae2947a66b47cc892a2acaf6ffd565"                 style="width: 100.0%; height: 100.0%;">                 Genocide of Shias by ISIL Deaths: 1700</div>                 ')[0];
+                popup_ba7a29288a0e49fba7bd8570de1f774d.setContent(html_08ae2947a66b47cc892a2acaf6ffd565);
+            
+
+            circle_marker_e9581ae20b694cd783eb4f57ee85808b.bindPopup(popup_ba7a29288a0e49fba7bd8570de1f774d);
+
+            
+        
+        
+            
+
+            var circle_marker_47e6021c1a62410c98868020ce898729 = L.circle(
+                [-38.4161,-63.6167],
+                20342.1447256,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_5c63d267e6e64dc794ecd1c9664a27f5 = L.popup({maxWidth: '300'});
+
+            
+                var html_b36b26313b2342208edd6affc6cc4315 = $('         <div id="html_b36b26313b2342208edd6affc6cc4315"                 style="width: 100.0%; height: 100.0%;">                 Conquest of the Desert Deaths: 1300</div>                 ')[0];
+                popup_5c63d267e6e64dc794ecd1c9664a27f5.setContent(html_b36b26313b2342208edd6affc6cc4315);
+            
+
+            circle_marker_47e6021c1a62410c98868020ce898729.bindPopup(popup_5c63d267e6e64dc794ecd1c9664a27f5);
+
+            
+        
+        
+            
+
+            var circle_marker_b9af470bd91e4487a98716348652626c = L.circle(
+                [33.2232,43.6793],
+                17841.2411615,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_18221041733143f0b2c28f5c450d6cd5);
+            
+        
+            
+            var popup_4527b51d47fd4c6aa0eea943695cccb4 = L.popup({maxWidth: '300'});
+
+            
+                var html_bee2b2378a6f467a9d4868516996dbff = $('         <div id="html_bee2b2378a6f467a9d4868516996dbff"                 style="width: 100.0%; height: 100.0%;">                 Genocide of Christians by ISIL Deaths: 1000</div>                 ')[0];
+                popup_4527b51d47fd4c6aa0eea943695cccb4.setContent(html_bee2b2378a6f467a9d4868516996dbff);
+            
+
+            circle_marker_b9af470bd91e4487a98716348652626c.bindPopup(popup_4527b51d47fd4c6aa0eea943695cccb4);
+
+            
+        
+        
+        
+        </script>
+        
