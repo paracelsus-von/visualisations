@@ -1,0 +1,249 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_1c08fdb888e64f1eacbb29c923a35f01 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_1c08fdb888e64f1eacbb29c923a35f01" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_1c08fdb888e64f1eacbb29c923a35f01 = L.map('map_1c08fdb888e64f1eacbb29c923a35f01', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_ff16243baa664004b24139613dc5ba78 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_1c08fdb888e64f1eacbb29c923a35f01);
+
+        
+        
+            
+
+            var circle_marker_0914c1114acc4832b0158502f4654b5f = L.circle(
+                [51.1657,10.4515],
+                1871205.15925,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_1c08fdb888e64f1eacbb29c923a35f01);
+            
+        
+            
+            var popup_181381f49d50429bac7eabecb0c8b6bf = L.popup({maxWidth: '300'});
+
+            
+                var html_140f3234841641d688e37eb8ed31d006 = $('         <div id="html_140f3234841641d688e37eb8ed31d006"                 style="width: 100.0%; height: 100.0%;">                 Nazi Ethnic Holocaust: 11,000,000</div>                 ')[0];
+                popup_181381f49d50429bac7eabecb0c8b6bf.setContent(html_140f3234841641d688e37eb8ed31d006);
+            
+
+            circle_marker_0914c1114acc4832b0158502f4654b5f.bindPopup(popup_181381f49d50429bac7eabecb0c8b6bf);
+
+            
+        
+        
+            
+
+            var circle_marker_8fa2c3dfb0c1471ea1d4cf1ad9fbda3d = L.circle(
+                [51.9194,19.1451],
+                295250.171448,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_1c08fdb888e64f1eacbb29c923a35f01);
+            
+        
+            
+            var popup_79cd35853aa045dca703cf76af0d5a7a = L.popup({maxWidth: '300'});
+
+            
+                var html_95450a07d34c4d1980a94bc51317c8fa = $('         <div id="html_95450a07d34c4d1980a94bc51317c8fa"                 style="width: 100.0%; height: 100.0%;">                 Polish Genocide by the Soviet Union: 273,861</div>                 ')[0];
+                popup_79cd35853aa045dca703cf76af0d5a7a.setContent(html_95450a07d34c4d1980a94bc51317c8fa);
+            
+
+            circle_marker_8fa2c3dfb0c1471ea1d4cf1ad9fbda3d.bindPopup(popup_79cd35853aa045dca703cf76af0d5a7a);
+
+            
+        
+        
+            
+
+            var circle_marker_4991b076b7de4c8c92db8eba63c3b4ae = L.circle(
+                [51.1657,10.4515],
+                160638.556558,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_1c08fdb888e64f1eacbb29c923a35f01);
+            
+        
+            
+            var popup_e5d10b5bc73f4e1db48d5631c0a97f59 = L.popup({maxWidth: '300'});
+
+            
+                var html_146654c7899b46d4b77d67d88ee5535c = $('         <div id="html_146654c7899b46d4b77d67d88ee5535c"                 style="width: 100.0%; height: 100.0%;">                 Aktion T4: 81,068</div>                 ')[0];
+                popup_e5d10b5bc73f4e1db48d5631c0a97f59.setContent(html_146654c7899b46d4b77d67d88ee5535c);
+            
+
+            circle_marker_4991b076b7de4c8c92db8eba63c3b4ae.bindPopup(popup_e5d10b5bc73f4e1db48d5631c0a97f59);
+
+            
+        
+        
+        
+        </script>
+        

@@ -1,0 +1,222 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_f507ba9c14234692b5fde63fd356aa7a {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_f507ba9c14234692b5fde63fd356aa7a" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_f507ba9c14234692b5fde63fd356aa7a = L.map('map_f507ba9c14234692b5fde63fd356aa7a', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_dc00aa5c0f004b65a360a8ac9ee7e070 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_f507ba9c14234692b5fde63fd356aa7a);
+
+        
+        
+            
+
+            var circle_marker_a058ac352642422e9e2b99e1f422add0 = L.circle(
+                [-6.1659,39.2026],
+                44869.9234467,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f507ba9c14234692b5fde63fd356aa7a);
+            
+        
+            
+            var popup_59316dea209045d0a3ca50ba4e181abe = L.popup({maxWidth: '300'});
+
+            
+                var html_88454af2b4f340029667f46309e94666 = $('         <div id="html_88454af2b4f340029667f46309e94666"                 style="width: 100.0%; height: 100.0%;">                 Zanzibar Revolution: 6,325</div>                 ')[0];
+                popup_59316dea209045d0a3ca50ba4e181abe.setContent(html_88454af2b4f340029667f46309e94666);
+            
+
+            circle_marker_a058ac352642422e9e2b99e1f422add0.bindPopup(popup_59316dea209045d0a3ca50ba4e181abe);
+
+            
+        
+        
+            
+
+            var circle_marker_aba645ecdabf488d81f680d0fb39cb13 = L.circle(
+                [30.3753,69.3451],
+                42370.6001619,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f507ba9c14234692b5fde63fd356aa7a);
+            
+        
+            
+            var popup_6411c0873360486387655a4792ea45f8 = L.popup({maxWidth: '300'});
+
+            
+                var html_d51857695b274eac84a60d17c9f396f6 = $('         <div id="html_d51857695b274eac84a60d17c9f396f6"                 style="width: 100.0%; height: 100.0%;">                 1964 East Pakistan riots: 5,640</div>                 ')[0];
+                popup_6411c0873360486387655a4792ea45f8.setContent(html_d51857695b274eac84a60d17c9f396f6);
+            
+
+            circle_marker_aba645ecdabf488d81f680d0fb39cb13.bindPopup(popup_6411c0873360486387655a4792ea45f8);
+
+            
+        
+        
+        
+        </script>
+        

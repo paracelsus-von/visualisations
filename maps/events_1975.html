@@ -1,0 +1,330 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_eb013a6d64c6430ba3a8d622a056fa24 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_eb013a6d64c6430ba3a8d622a056fa24" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_eb013a6d64c6430ba3a8d622a056fa24 = L.map('map_eb013a6d64c6430ba3a8d622a056fa24', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_290bc2b375bc4d60880d2cde2797a2ef = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_eb013a6d64c6430ba3a8d622a056fa24);
+
+        
+        
+            
+
+            var circle_marker_1ac42c25abca480b8d7b0cea0082b861 = L.circle(
+                [12.5657,104.991],
+                831367.571518,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_eb013a6d64c6430ba3a8d622a056fa24);
+            
+        
+            
+            var popup_f56d9808369741409c640ddb72a9e107 = L.popup({maxWidth: '300'});
+
+            
+                var html_6e1d7472501f4471b2eafc81a05e8e65 = $('         <div id="html_6e1d7472501f4471b2eafc81a05e8e65"                 style="width: 100.0%; height: 100.0%;">                 Cambodian Holocaust: 2,171,381</div>                 ')[0];
+                popup_f56d9808369741409c640ddb72a9e107.setContent(html_6e1d7472501f4471b2eafc81a05e8e65);
+            
+
+            circle_marker_1ac42c25abca480b8d7b0cea0082b861.bindPopup(popup_f56d9808369741409c640ddb72a9e107);
+
+            
+        
+        
+            
+
+            var circle_marker_6b30fed29259458e8fec9363ada355d5 = L.circle(
+                [12.5657,104.991],
+                264594.087797,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_eb013a6d64c6430ba3a8d622a056fa24);
+            
+        
+            
+            var popup_8ee2f296d0e143b1852743b3e09ee26a = L.popup({maxWidth: '300'});
+
+            
+                var html_db755c9e339c40d385b1ac278525029b = $('         <div id="html_db755c9e339c40d385b1ac278525029b"                 style="width: 100.0%; height: 100.0%;">                 Chinese Genocide under Khmer Rouge: 219,943</div>                 ')[0];
+                popup_8ee2f296d0e143b1852743b3e09ee26a.setContent(html_db755c9e339c40d385b1ac278525029b);
+            
+
+            circle_marker_6b30fed29259458e8fec9363ada355d5.bindPopup(popup_8ee2f296d0e143b1852743b3e09ee26a);
+
+            
+        
+        
+            
+
+            var circle_marker_8c8e0ea417f842b486341517756413b6 = L.circle(
+                [12.5657,104.991],
+                259853.252387,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_eb013a6d64c6430ba3a8d622a056fa24);
+            
+        
+            
+            var popup_2d36d19f5be64b19a9754c48371cf12a = L.popup({maxWidth: '300'});
+
+            
+                var html_0591a47e33574d108338029c735c0dab = $('         <div id="html_0591a47e33574d108338029c735c0dab"                 style="width: 100.0%; height: 100.0%;">                 Cham Genocide under Khmer Rouge: 212,132</div>                 ')[0];
+                popup_2d36d19f5be64b19a9754c48371cf12a.setContent(html_0591a47e33574d108338029c735c0dab);
+            
+
+            circle_marker_8c8e0ea417f842b486341517756413b6.bindPopup(popup_2d36d19f5be64b19a9754c48371cf12a);
+
+            
+        
+        
+            
+
+            var circle_marker_aa2555595b364fc09bc199522dea1e1b = L.circle(
+                [12.5657,104.991],
+                56418.9583548,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_eb013a6d64c6430ba3a8d622a056fa24);
+            
+        
+            
+            var popup_7fbd32f9249b4fa09df42a0576b4661e = L.popup({maxWidth: '300'});
+
+            
+                var html_b83f12ca149f4537b12198d4fed7bc61 = $('         <div id="html_b83f12ca149f4537b12198d4fed7bc61"                 style="width: 100.0%; height: 100.0%;">                 Vietnamese Genocide by Khmer Rouge: 10,000</div>                 ')[0];
+                popup_7fbd32f9249b4fa09df42a0576b4661e.setContent(html_b83f12ca149f4537b12198d4fed7bc61);
+            
+
+            circle_marker_aa2555595b364fc09bc199522dea1e1b.bindPopup(popup_7fbd32f9249b4fa09df42a0576b4661e);
+
+            
+        
+        
+            
+
+            var circle_marker_2ad0b4ef1c8248febebfcd4de01811e6 = L.circle(
+                [12.5657,104.991],
+                50462.6504404,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_eb013a6d64c6430ba3a8d622a056fa24);
+            
+        
+            
+            var popup_e558d68ebbcf4543badc9ce1a6c491eb = L.popup({maxWidth: '300'});
+
+            
+                var html_acb34d9058d84423b8b1b3f3e773feff = $('         <div id="html_acb34d9058d84423b8b1b3f3e773feff"                 style="width: 100.0%; height: 100.0%;">                 Thai Genocide by Khmer Rouge: 8,000</div>                 ')[0];
+                popup_e558d68ebbcf4543badc9ce1a6c491eb.setContent(html_acb34d9058d84423b8b1b3f3e773feff);
+            
+
+            circle_marker_2ad0b4ef1c8248febebfcd4de01811e6.bindPopup(popup_e558d68ebbcf4543badc9ce1a6c491eb);
+
+            
+        
+        
+            
+
+            var circle_marker_8e80dab016b14c30997d2a27e1d66a0f = L.circle(
+                [12.5657,104.991],
+                35682.4823231,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_eb013a6d64c6430ba3a8d622a056fa24);
+            
+        
+            
+            var popup_bb6c036ccdcd4e7ebb8a3df163596a54 = L.popup({maxWidth: '300'});
+
+            
+                var html_055c3ab56ff24b7499d63e342e3bc570 = $('         <div id="html_055c3ab56ff24b7499d63e342e3bc570"                 style="width: 100.0%; height: 100.0%;">                 Laotian Genocide byKhmer Rouge: 4,000</div>                 ')[0];
+                popup_bb6c036ccdcd4e7ebb8a3df163596a54.setContent(html_055c3ab56ff24b7499d63e342e3bc570);
+            
+
+            circle_marker_8e80dab016b14c30997d2a27e1d66a0f.bindPopup(popup_bb6c036ccdcd4e7ebb8a3df163596a54);
+
+            
+        
+        
+        
+        </script>
+        

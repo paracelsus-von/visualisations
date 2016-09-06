@@ -1,0 +1,249 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_b997be461e0a45378c3e2d8899fbc0e3 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_b997be461e0a45378c3e2d8899fbc0e3" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_b997be461e0a45378c3e2d8899fbc0e3 = L.map('map_b997be461e0a45378c3e2d8899fbc0e3', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_62757fbcd29542f688fbaa8f6c9ce802 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_b997be461e0a45378c3e2d8899fbc0e3);
+
+        
+        
+            
+
+            var circle_marker_15b0d6e1d75048cca825fa4bc744597e = L.circle(
+                [38.9637,35.2433],
+                590500.612422,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_b997be461e0a45378c3e2d8899fbc0e3);
+            
+        
+            
+            var popup_5bc8cab4a0c9405c908923b1cd5f1259 = L.popup({maxWidth: '300'});
+
+            
+                var html_fc36c323c2fa49e88c4d980b6ee1388b = $('         <div id="html_fc36c323c2fa49e88c4d980b6ee1388b"                 style="width: 100.0%; height: 100.0%;">                 Armenian Genocide Medz Yeghern Aghet: 1,095,445</div>                 ')[0];
+                popup_5bc8cab4a0c9405c908923b1cd5f1259.setContent(html_fc36c323c2fa49e88c4d980b6ee1388b);
+            
+
+            circle_marker_15b0d6e1d75048cca825fa4bc744597e.bindPopup(popup_5bc8cab4a0c9405c908923b1cd5f1259);
+
+            
+        
+        
+            
+
+            var circle_marker_97aca8d3afaf4e26bda4379770da00da = L.circle(
+                [61.524,105.3188],
+                518802.003301,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_b997be461e0a45378c3e2d8899fbc0e3);
+            
+        
+            
+            var popup_d642be2442474cd785f8e36af69269aa = L.popup({maxWidth: '300'});
+
+            
+                var html_eec29a1ee8324334a8bbf4cef7189839 = $('         <div id="html_eec29a1ee8324334a8bbf4cef7189839"                 style="width: 100.0%; height: 100.0%;">                 Turkish andKurdishmassacres by the Russian Empire: 845,577</div>                 ')[0];
+                popup_d642be2442474cd785f8e36af69269aa.setContent(html_eec29a1ee8324334a8bbf4cef7189839);
+            
+
+            circle_marker_97aca8d3afaf4e26bda4379770da00da.bindPopup(popup_d642be2442474cd785f8e36af69269aa);
+
+            
+        
+        
+            
+
+            var circle_marker_0c01818b270047c69ff9e0af1ca6de45 = L.circle(
+                [38.9637,35.2433],
+                259853.252387,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_b997be461e0a45378c3e2d8899fbc0e3);
+            
+        
+            
+            var popup_e6629b819f4f4ad0b1bec3de776da09a = L.popup({maxWidth: '300'});
+
+            
+                var html_aa1a2613950245a8b7e6d991b53a4c48 = $('         <div id="html_aa1a2613950245a8b7e6d991b53a4c48"                 style="width: 100.0%; height: 100.0%;">                 Assyrian genocide: 212,132</div>                 ')[0];
+                popup_e6629b819f4f4ad0b1bec3de776da09a.setContent(html_aa1a2613950245a8b7e6d991b53a4c48);
+            
+
+            circle_marker_0c01818b270047c69ff9e0af1ca6de45.bindPopup(popup_e6629b819f4f4ad0b1bec3de776da09a);
+
+            
+        
+        
+        
+        </script>
+        

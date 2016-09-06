@@ -1,0 +1,222 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_7fc8ff7a218b4f52b9f1987478ada8fe {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_7fc8ff7a218b4f52b9f1987478ada8fe" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_7fc8ff7a218b4f52b9f1987478ada8fe = L.map('map_7fc8ff7a218b4f52b9f1987478ada8fe', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_443d38a4392a402c82a782a866b2a108 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_7fc8ff7a218b4f52b9f1987478ada8fe);
+
+        
+        
+            
+
+            var circle_marker_3fc1847f6468437ba1b6a9e2911b00fe = L.circle(
+                [48.3794,31.1656],
+                1210275.16154,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_7fc8ff7a218b4f52b9f1987478ada8fe);
+            
+        
+            
+            var popup_e48ba9da01a74f508d2f44c1e724a469 = L.popup({maxWidth: '300'});
+
+            
+                var html_30f913bd8bf4478d91dd63464f6d1451 = $('         <div id="html_30f913bd8bf4478d91dd63464f6d1451"                 style="width: 100.0%; height: 100.0%;">                 Ukrainian Genocide: 4,601,698</div>                 ')[0];
+                popup_e48ba9da01a74f508d2f44c1e724a469.setContent(html_30f913bd8bf4478d91dd63464f6d1451);
+            
+
+            circle_marker_3fc1847f6468437ba1b6a9e2911b00fe.bindPopup(popup_e48ba9da01a74f508d2f44c1e724a469);
+
+            
+        
+        
+            
+
+            var circle_marker_036bdf2eaa614064b62b6ae8a279e484 = L.circle(
+                [61.524,105.3188],
+                1162099.20998,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_7fc8ff7a218b4f52b9f1987478ada8fe);
+            
+        
+            
+            var popup_a1afaca998e441479ad06c16a3e55562 = L.popup({maxWidth: '300'});
+
+            
+                var html_722e2cf211454b61b615c0923328d0ec = $('         <div id="html_722e2cf211454b61b615c0923328d0ec"                 style="width: 100.0%; height: 100.0%;">                 Soviet famine of 1932-33: 4,242,641</div>                 ')[0];
+                popup_a1afaca998e441479ad06c16a3e55562.setContent(html_722e2cf211454b61b615c0923328d0ec);
+            
+
+            circle_marker_036bdf2eaa614064b62b6ae8a279e484.bindPopup(popup_a1afaca998e441479ad06c16a3e55562);
+
+            
+        
+        
+        
+        </script>
+        

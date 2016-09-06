@@ -1,0 +1,222 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_bfdd0f6d431240ee90b580ceb7e030f9 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_bfdd0f6d431240ee90b580ceb7e030f9" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_bfdd0f6d431240ee90b580ceb7e030f9 = L.map('map_bfdd0f6d431240ee90b580ceb7e030f9', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_1988498ac7de429d8c3684bcbbc337ea = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_bfdd0f6d431240ee90b580ceb7e030f9);
+
+        
+        
+            
+
+            var circle_marker_3da2c54ade36444aaa96ff939df39744 = L.circle(
+                [-19.0154,29.1549],
+                58106.0492785,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_bfdd0f6d431240ee90b580ceb7e030f9);
+            
+        
+            
+            var popup_92c8ca8e48104f62986480df04a7f7dd = L.popup({maxWidth: '300'});
+
+            
+                var html_fd4b33b5c4d24912bcfe684c5e44940e = $('         <div id="html_fd4b33b5c4d24912bcfe684c5e44940e"                 style="width: 100.0%; height: 100.0%;">                 Gukurahundi: 10,607</div>                 ')[0];
+                popup_92c8ca8e48104f62986480df04a7f7dd.setContent(html_fd4b33b5c4d24912bcfe684c5e44940e);
+            
+
+            circle_marker_3da2c54ade36444aaa96ff939df39744.bindPopup(popup_92c8ca8e48104f62986480df04a7f7dd);
+
+            
+        
+        
+            
+
+            var circle_marker_bb9e03b516864691a638ef6467ff655d = L.circle(
+                [26.2006,92.9376],
+                38600.6292336,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_bfdd0f6d431240ee90b580ceb7e030f9);
+            
+        
+            
+            var popup_5902f95316014198910b0272b91bad0e = L.popup({maxWidth: '300'});
+
+            
+                var html_82f95d29aaf94efe9f7f211437414a2e = $('         <div id="html_82f95d29aaf94efe9f7f211437414a2e"                 style="width: 100.0%; height: 100.0%;">                 Nellie massacre: 4,681</div>                 ')[0];
+                popup_5902f95316014198910b0272b91bad0e.setContent(html_82f95d29aaf94efe9f7f211437414a2e);
+            
+
+            circle_marker_bb9e03b516864691a638ef6467ff655d.bindPopup(popup_5902f95316014198910b0272b91bad0e);
+
+            
+        
+        
+        
+        </script>
+        

@@ -1,0 +1,222 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_9a1232d2ab7b4d238b637a401fe833d3 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_9a1232d2ab7b4d238b637a401fe833d3" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_9a1232d2ab7b4d238b637a401fe833d3 = L.map('map_9a1232d2ab7b4d238b637a401fe833d3', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_90c84b85adb24fc8b071cf087fd74e17 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_9a1232d2ab7b4d238b637a401fe833d3);
+
+        
+        
+            
+
+            var circle_marker_f8f3422f0f664ae58b3a6a5929ea0d27 = L.circle(
+                [61.524,105.3188],
+                178412.411615,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_9a1232d2ab7b4d238b637a401fe833d3);
+            
+        
+            
+            var popup_bb3bd9273c5a4edeb098d40eaa1ee6a9 = L.popup({maxWidth: '300'});
+
+            
+                var html_e9666d948f864276ae5ed1cc968aa7aa = $('         <div id="html_e9666d948f864276ae5ed1cc968aa7aa"                 style="width: 100.0%; height: 100.0%;">                 Deportation of the Crimean Tatars: 100,000</div>                 ')[0];
+                popup_bb3bd9273c5a4edeb098d40eaa1ee6a9.setContent(html_e9666d948f864276ae5ed1cc968aa7aa);
+            
+
+            circle_marker_f8f3422f0f664ae58b3a6a5929ea0d27.bindPopup(popup_bb3bd9273c5a4edeb098d40eaa1ee6a9);
+
+            
+        
+        
+            
+
+            var circle_marker_b9f80a996fa045d6a59b796a4d95d34b = L.circle(
+                [51.9194,19.1451],
+                132039.649674,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_9a1232d2ab7b4d238b637a401fe833d3);
+            
+        
+            
+            var popup_e4060e241d6c44c89c209e64c1c70a77 = L.popup({maxWidth: '300'});
+
+            
+                var html_a3139cb721444e9498d2785e7df731b3 = $('         <div id="html_a3139cb721444e9498d2785e7df731b3"                 style="width: 100.0%; height: 100.0%;">                 Warsaw Uprising: 54,772</div>                 ')[0];
+                popup_e4060e241d6c44c89c209e64c1c70a77.setContent(html_a3139cb721444e9498d2785e7df731b3);
+            
+
+            circle_marker_b9f80a996fa045d6a59b796a4d95d34b.bindPopup(popup_e4060e241d6c44c89c209e64c1c70a77);
+
+            
+        
+        
+        
+        </script>
+        

@@ -1,0 +1,249 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_8164b5fde61544518a96198a2cefecc4 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_8164b5fde61544518a96198a2cefecc4" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_8164b5fde61544518a96198a2cefecc4 = L.map('map_8164b5fde61544518a96198a2cefecc4', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_a8ce5c903a744acdbeb4dcdb9c143d56 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_8164b5fde61544518a96198a2cefecc4);
+
+        
+        
+            
+
+            var circle_marker_69d29facb3264ca0b92ebc2c06e79656 = L.circle(
+                [61.524,105.3188],
+                229751.271456,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_8164b5fde61544518a96198a2cefecc4);
+            
+        
+            
+            var popup_d771f9593b1c43aa8897011ff526826e = L.popup({maxWidth: '300'});
+
+            
+                var html_f25d0f791e5643a5a4b0474fa80f0103 = $('         <div id="html_f25d0f791e5643a5a4b0474fa80f0103"                 style="width: 100.0%; height: 100.0%;">                 Polish Operation of the NKVD (1937-38): 165,831</div>                 ')[0];
+                popup_d771f9593b1c43aa8897011ff526826e.setContent(html_f25d0f791e5643a5a4b0474fa80f0103);
+            
+
+            circle_marker_69d29facb3264ca0b92ebc2c06e79656.bindPopup(popup_d771f9593b1c43aa8897011ff526826e);
+
+            
+        
+        
+            
+
+            var circle_marker_e25a4a70822f4c44bc9e44aaee5d5f55 = L.circle(
+                [39.3074,39.4388],
+                74483.7096706,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_8164b5fde61544518a96198a2cefecc4);
+            
+        
+            
+            var popup_bbe541cad75d466cacee5102a835fdc9 = L.popup({maxWidth: '300'});
+
+            
+                var html_d9983018cbba42d08334f13a4bd05bb1 = $('         <div id="html_d9983018cbba42d08334f13a4bd05bb1"                 style="width: 100.0%; height: 100.0%;">                 Dersim Massacre: 17,429</div>                 ')[0];
+                popup_bbe541cad75d466cacee5102a835fdc9.setContent(html_d9983018cbba42d08334f13a4bd05bb1);
+            
+
+            circle_marker_e25a4a70822f4c44bc9e44aaee5d5f55.bindPopup(popup_bbe541cad75d466cacee5102a835fdc9);
+
+            
+        
+        
+            
+
+            var circle_marker_155500493c71452c8ad3c63360d2a587 = L.circle(
+                [18.7357,-70.1627],
+                28657.2766737,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_8164b5fde61544518a96198a2cefecc4);
+            
+        
+            
+            var popup_94c98c5a27e94e569e28fcb47a5bb0d4 = L.popup({maxWidth: '300'});
+
+            
+                var html_417edd3ab5e04da49de0d005b20c4c9b = $('         <div id="html_417edd3ab5e04da49de0d005b20c4c9b"                 style="width: 100.0%; height: 100.0%;">                 Parsley Massacre: 2,580</div>                 ')[0];
+                popup_94c98c5a27e94e569e28fcb47a5bb0d4.setContent(html_417edd3ab5e04da49de0d005b20c4c9b);
+            
+
+            circle_marker_155500493c71452c8ad3c63360d2a587.bindPopup(popup_94c98c5a27e94e569e28fcb47a5bb0d4);
+
+            
+        
+        
+        
+        </script>
+        

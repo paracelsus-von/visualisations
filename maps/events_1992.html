@@ -1,0 +1,222 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_52240327b0294500b6cc0d87742df92b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_52240327b0294500b6cc0d87742df92b" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_52240327b0294500b6cc0d87742df92b = L.map('map_52240327b0294500b6cc0d87742df92b', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_ff5512fd59f14233a8c77b92707f6c25 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_52240327b0294500b6cc0d87742df92b);
+
+        
+        
+            
+
+            var circle_marker_579420521a8147278156b4ca68c61e47 = L.circle(
+                [43.9159,17.6791],
+                111394.229173,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_52240327b0294500b6cc0d87742df92b);
+            
+        
+            
+            var popup_7780298c54ec447f8d1f9851b279c084 = L.popup({maxWidth: '300'});
+
+            
+                var html_53b03c9a8641443f90f2e59630d470c0 = $('         <div id="html_53b03c9a8641443f90f2e59630d470c0"                 style="width: 100.0%; height: 100.0%;">                 Ethnic cleansingand Genocidefrom all sides of the Bosnian War: 38,983</div>                 ')[0];
+                popup_7780298c54ec447f8d1f9851b279c084.setContent(html_53b03c9a8641443f90f2e59630d470c0);
+            
+
+            circle_marker_579420521a8147278156b4ca68c61e47.bindPopup(popup_7780298c54ec447f8d1f9851b279c084);
+
+            
+        
+        
+            
+
+            var circle_marker_85e981e4f63a454e80b16c47b8df744d = L.circle(
+                [43.0016,41.0234],
+                83334.0673847,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_52240327b0294500b6cc0d87742df92b);
+            
+        
+            
+            var popup_dd064482da2449e09300f87ecf65548c = L.popup({maxWidth: '300'});
+
+            
+                var html_ef53ac78574d4ecc8fcdfc6791c93f0c = $('         <div id="html_ef53ac78574d4ecc8fcdfc6791c93f0c"                 style="width: 100.0%; height: 100.0%;">                 Ethnic cleansing of Georgians: 21,817</div>                 ')[0];
+                popup_dd064482da2449e09300f87ecf65548c.setContent(html_ef53ac78574d4ecc8fcdfc6791c93f0c);
+            
+
+            circle_marker_85e981e4f63a454e80b16c47b8df744d.bindPopup(popup_dd064482da2449e09300f87ecf65548c);
+
+            
+        
+        
+        
+        </script>
+        

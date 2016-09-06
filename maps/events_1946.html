@@ -1,0 +1,249 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_dd89e5036e9748579d1ef8cafa3caa6b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_dd89e5036e9748579d1ef8cafa3caa6b" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_dd89e5036e9748579d1ef8cafa3caa6b = L.map('map_dd89e5036e9748579d1ef8cafa3caa6b', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_48f0e88e96424c61af9d61809a6fffff = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_dd89e5036e9748579d1ef8cafa3caa6b);
+
+        
+        
+            
+
+            var circle_marker_daa477e61c9246abb9958d397447f322 = L.circle(
+                [25.0961,85.3131],
+                49655.0941836,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_dd89e5036e9748579d1ef8cafa3caa6b);
+            
+        
+            
+            var popup_661784fc3b994c3fa065ff597c9f29b8 = L.popup({maxWidth: '300'});
+
+            
+                var html_fcd2026d291f4cc2ba1d1f75b3256748 = $('         <div id="html_fcd2026d291f4cc2ba1d1f75b3256748"                 style="width: 100.0%; height: 100.0%;">                 1946 Bihar riots: 7,746</div>                 ')[0];
+                popup_661784fc3b994c3fa065ff597c9f29b8.setContent(html_fcd2026d291f4cc2ba1d1f75b3256748);
+            
+
+            circle_marker_daa477e61c9246abb9958d397447f322.bindPopup(popup_661784fc3b994c3fa065ff597c9f29b8);
+
+            
+        
+        
+            
+
+            var circle_marker_1a9728fcf7f6478b862bc13539bb11c2 = L.circle(
+                [22.8724,91.0973],
+                47442.2723445,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_dd89e5036e9748579d1ef8cafa3caa6b);
+            
+        
+            
+            var popup_9949aa066d3f4079866ec2b141636017 = L.popup({maxWidth: '300'});
+
+            
+                var html_3b398ceaee11410981132c8a1fbb9e6b = $('         <div id="html_3b398ceaee11410981132c8a1fbb9e6b"                 style="width: 100.0%; height: 100.0%;">                 Noakhali riots: 7,071</div>                 ')[0];
+                popup_9949aa066d3f4079866ec2b141636017.setContent(html_3b398ceaee11410981132c8a1fbb9e6b);
+            
+
+            circle_marker_1a9728fcf7f6478b862bc13539bb11c2.bindPopup(popup_9949aa066d3f4079866ec2b141636017);
+
+            
+        
+        
+            
+
+            var circle_marker_a4118b42735c44d4b3a669675927a58a = L.circle(
+                [20.5937,78.9629],
+                35682.4823231,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_dd89e5036e9748579d1ef8cafa3caa6b);
+            
+        
+            
+            var popup_d34c0b1d2d354959a286a5ac3768a113 = L.popup({maxWidth: '300'});
+
+            
+                var html_48896a833a9f4d10af9ce2dfde8d63cf = $('         <div id="html_48896a833a9f4d10af9ce2dfde8d63cf"                 style="width: 100.0%; height: 100.0%;">                 Direct Action Day: 4,000</div>                 ')[0];
+                popup_d34c0b1d2d354959a286a5ac3768a113.setContent(html_48896a833a9f4d10af9ce2dfde8d63cf);
+            
+
+            circle_marker_a4118b42735c44d4b3a669675927a58a.bindPopup(popup_d34c0b1d2d354959a286a5ac3768a113);
+
+            
+        
+        
+        
+        </script>
+        

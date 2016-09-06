@@ -1,0 +1,222 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_81595e880de947ebaa3d464c9da6f49f {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_81595e880de947ebaa3d464c9da6f49f" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_81595e880de947ebaa3d464c9da6f49f = L.map('map_81595e880de947ebaa3d464c9da6f49f', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_15cde42f11854faf971db5567ab53d12 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_81595e880de947ebaa3d464c9da6f49f);
+
+        
+        
+            
+
+            var circle_marker_847780518240462f8fdcebb46edbaba9 = L.circle(
+                [-20,30],
+                124875.943737,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_81595e880de947ebaa3d464c9da6f49f);
+            
+        
+            
+            var popup_58a22d078a794083a025e9a9089026fc = L.popup({maxWidth: '300'});
+
+            
+                var html_95459baf80e9430498f45b3301860225 = $('         <div id="html_95459baf80e9430498f45b3301860225"                 style="width: 100.0%; height: 100.0%;">                 Herero genocide: 48,990</div>                 ')[0];
+                popup_58a22d078a794083a025e9a9089026fc.setContent(html_95459baf80e9430498f45b3301860225);
+            
+
+            circle_marker_847780518240462f8fdcebb46edbaba9.bindPopup(popup_58a22d078a794083a025e9a9089026fc);
+
+            
+        
+        
+            
+
+            var circle_marker_65b05fc069914df3a0dfcb99fa87e04e = L.circle(
+                [-20,30],
+                56418.9583548,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_81595e880de947ebaa3d464c9da6f49f);
+            
+        
+            
+            var popup_241654ebdeb64d4483446a41438c19f1 = L.popup({maxWidth: '300'});
+
+            
+                var html_b20e3bb3b45643eab38f05329367d917 = $('         <div id="html_b20e3bb3b45643eab38f05329367d917"                 style="width: 100.0%; height: 100.0%;">                 Namaqua genocide: 10,000</div>                 ')[0];
+                popup_241654ebdeb64d4483446a41438c19f1.setContent(html_b20e3bb3b45643eab38f05329367d917);
+            
+
+            circle_marker_65b05fc069914df3a0dfcb99fa87e04e.bindPopup(popup_241654ebdeb64d4483446a41438c19f1);
+
+            
+        
+        
+        
+        </script>
+        

@@ -1,0 +1,222 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_0ec2fad076bd498483c319842f042e76 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_0ec2fad076bd498483c319842f042e76" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_0ec2fad076bd498483c319842f042e76 = L.map('map_0ec2fad076bd498483c319842f042e76', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_b292c1e6e23d4559bd90e95895bc96ee = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_0ec2fad076bd498483c319842f042e76);
+
+        
+        
+            
+
+            var circle_marker_3e79e0ce0cd04ac1812d1cc12af6228c = L.circle(
+                [52.0055,37.9587],
+                624378.444178,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_0ec2fad076bd498483c319842f042e76);
+            
+        
+            
+            var popup_9af900b86ba3431a8ed4188e36c825c0 = L.popup({maxWidth: '300'});
+
+            
+                var html_9123d986b79841db9459f87c6075b334 = $('         <div id="html_9123d986b79841db9459f87c6075b334"                 style="width: 100.0%; height: 100.0%;">                 The Ethnic Cleansing of Germans: 1,224,745</div>                 ')[0];
+                popup_9af900b86ba3431a8ed4188e36c825c0.setContent(html_9123d986b79841db9459f87c6075b334);
+            
+
+            circle_marker_3e79e0ce0cd04ac1812d1cc12af6228c.bindPopup(popup_9af900b86ba3431a8ed4188e36c825c0);
+
+            
+        
+        
+            
+
+            var circle_marker_84c9a90e8d0844dfbd95f48036164bc5 = L.circle(
+                [28.0339,1.6596],
+                46438.6636209,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_0ec2fad076bd498483c319842f042e76);
+            
+        
+            
+            var popup_ed4d59e5f5d44ce7a93ddec0d37da0ca = L.popup({maxWidth: '300'});
+
+            
+                var html_299a723e3b67443a804b989ca3029cf8 = $('         <div id="html_299a723e3b67443a804b989ca3029cf8"                 style="width: 100.0%; height: 100.0%;">                 Algerian Massacres by the French: 6,775</div>                 ')[0];
+                popup_ed4d59e5f5d44ce7a93ddec0d37da0ca.setContent(html_299a723e3b67443a804b989ca3029cf8);
+            
+
+            circle_marker_84c9a90e8d0844dfbd95f48036164bc5.bindPopup(popup_ed4d59e5f5d44ce7a93ddec0d37da0ca);
+
+            
+        
+        
+        
+        </script>
+        

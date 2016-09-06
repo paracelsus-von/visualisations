@@ -1,0 +1,222 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_772148360f424700bf5a0d7be6a8fe4b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_772148360f424700bf5a0d7be6a8fe4b" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_772148360f424700bf5a0d7be6a8fe4b = L.map('map_772148360f424700bf5a0d7be6a8fe4b', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_bada7754d6a74000adebb4b413812aae = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_772148360f424700bf5a0d7be6a8fe4b);
+
+        
+        
+            
+
+            var circle_marker_0c5e33f024a64d6b945b02462f06dfa5 = L.circle(
+                [30.3753,69.3451],
+                298159.649455,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_772148360f424700bf5a0d7be6a8fe4b);
+            
+        
+            
+            var popup_ff986d64c8b94b019c3af8dda7d9c78c = L.popup({maxWidth: '300'});
+
+            
+                var html_17fffb66033d421d87822e574cf92ea5 = $('         <div id="html_17fffb66033d421d87822e574cf92ea5"                 style="width: 100.0%; height: 100.0%;">                 1971 Bangladesh genocide: 279,285</div>                 ')[0];
+                popup_ff986d64c8b94b019c3af8dda7d9c78c.setContent(html_17fffb66033d421d87822e574cf92ea5);
+            
+
+            circle_marker_0c5e33f024a64d6b945b02462f06dfa5.bindPopup(popup_ff986d64c8b94b019c3af8dda7d9c78c);
+
+            
+        
+        
+            
+
+            var circle_marker_d5d72ebb0c2b480aab6d18b97948d542 = L.circle(
+                [23.685,90.3563],
+                62436.6973509,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_772148360f424700bf5a0d7be6a8fe4b);
+            
+        
+            
+            var popup_2df1f8693cfc4fefb027e74009f6f7bf = L.popup({maxWidth: '300'});
+
+            
+                var html_bf2485f31987406e98f0ccf85dd53b9b = $('         <div id="html_bf2485f31987406e98f0ccf85dd53b9b"                 style="width: 100.0%; height: 100.0%;">                 Massacres of Biharis by Bengali mobs: 12,247</div>                 ')[0];
+                popup_2df1f8693cfc4fefb027e74009f6f7bf.setContent(html_bf2485f31987406e98f0ccf85dd53b9b);
+            
+
+            circle_marker_d5d72ebb0c2b480aab6d18b97948d542.bindPopup(popup_2df1f8693cfc4fefb027e74009f6f7bf);
+
+            
+        
+        
+        
+        </script>
+        

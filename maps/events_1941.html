@@ -1,0 +1,276 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_72fffc5d6bba4881b6e144e8f78793b8 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_72fffc5d6bba4881b6e144e8f78793b8" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_72fffc5d6bba4881b6e144e8f78793b8 = L.map('map_72fffc5d6bba4881b6e144e8f78793b8', {
+                                           center:[30,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_c9abff9467b54426a219ea6cf4ec8c30 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_72fffc5d6bba4881b6e144e8f78793b8);
+
+        
+        
+            
+
+            var circle_marker_4eac42abe3ce45baa9edfd01da0da47e = L.circle(
+                [51.1657,10.4515],
+                1279594.91098,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_72fffc5d6bba4881b6e144e8f78793b8);
+            
+        
+            
+            var popup_4bb1c71247d8411c952a117197db4272 = L.popup({maxWidth: '300'});
+
+            
+                var html_6a38dd44ebb34d35ac0dc893746823aa = $('         <div id="html_6a38dd44ebb34d35ac0dc893746823aa"                 style="width: 100.0%; height: 100.0%;">                 Ha Shoah: 5,143,928</div>                 ')[0];
+                popup_4bb1c71247d8411c952a117197db4272.setContent(html_6a38dd44ebb34d35ac0dc893746823aa);
+            
+
+            circle_marker_4eac42abe3ce45baa9edfd01da0da47e.bindPopup(popup_4bb1c71247d8411c952a117197db4272);
+
+            
+        
+        
+            
+
+            var circle_marker_a790dabcf851489faefe40077af63005 = L.circle(
+                [51.9194,19.1451],
+                938998.607416,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_72fffc5d6bba4881b6e144e8f78793b8);
+            
+        
+            
+            var popup_79c33c3715d240239cdf1084ff07ae25 = L.popup({maxWidth: '300'});
+
+            
+                var html_c91b9748fa794b38a1a37ac5f0570582 = $('         <div id="html_c91b9748fa794b38a1a37ac5f0570582"                 style="width: 100.0%; height: 100.0%;">                 Nazi Holocaust against ethnic Poles: 2,770,000</div>                 ')[0];
+                popup_79c33c3715d240239cdf1084ff07ae25.setContent(html_c91b9748fa794b38a1a37ac5f0570582);
+            
+
+            circle_marker_a790dabcf851489faefe40077af63005.bindPopup(popup_79c33c3715d240239cdf1084ff07ae25);
+
+            
+        
+        
+            
+
+            var circle_marker_92e4828fdb954ce3b17c2c4119fd18e4 = L.circle(
+                [45.1,15.2],
+                351384.592165,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_72fffc5d6bba4881b6e144e8f78793b8);
+            
+        
+            
+            var popup_43193ed52baf443fb417659fc65899ba = L.popup({maxWidth: '300'});
+
+            
+                var html_ed4be23d45c0406eb438673b21ad15d2 = $('         <div id="html_ed4be23d45c0406eb438673b21ad15d2"                 style="width: 100.0%; height: 100.0%;">                 The Holocaust in the Independent State of Croatia: 387,896</div>                 ')[0];
+                popup_43193ed52baf443fb417659fc65899ba.setContent(html_ed4be23d45c0406eb438673b21ad15d2);
+            
+
+            circle_marker_92e4828fdb954ce3b17c2c4119fd18e4.bindPopup(popup_43193ed52baf443fb417659fc65899ba);
+
+            
+        
+        
+            
+
+            var circle_marker_da11241cd4fe4811b12e5f3f3485dadc = L.circle(
+                [51.1657,10.4515],
+                324917.364066,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_72fffc5d6bba4881b6e144e8f78793b8);
+            
+        
+            
+            var popup_9b3458cfa6b8474492066f5b7659fbed = L.popup({maxWidth: '300'});
+
+            
+                var html_e0c5ab6398ea4a119d86c5b77a96f284 = $('         <div id="html_e0c5ab6398ea4a119d86c5b77a96f284"                 style="width: 100.0%; height: 100.0%;">                 Porajmos: 331,662</div>                 ')[0];
+                popup_9b3458cfa6b8474492066f5b7659fbed.setContent(html_e0c5ab6398ea4a119d86c5b77a96f284);
+            
+
+            circle_marker_da11241cd4fe4811b12e5f3f3485dadc.bindPopup(popup_9b3458cfa6b8474492066f5b7659fbed);
+
+            
+        
+        
+        
+        </script>
+        
