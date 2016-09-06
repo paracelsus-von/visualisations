@@ -1,0 +1,12 @@
+{"events":[
+    {"name":"WW2", "deathMin":"x", "deathMax":"y", "yearStart":"a", "yearEnd":"b"},
+    {"name":"", "deathMin":"", "deathMax":"", "yearStart":"", "yearEnd":"", "location": "", type:""},
+
+]}
+
+
+##################
+#dimensional info
+##################
+#type: War, conquest, genocide, democide, terrorism
+#addional types: natural disaster, disease, structural/engineering? (building collapses, car crashes, bridges collapsing etc?)
