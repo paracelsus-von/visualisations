@@ -80,7 +80,8 @@ for year in xrange(1900, 2017):
     try:
         plt.table(colLabels=["Event","Deaths"], 
                   cellText=names,
-                  colWidths=[0.1,0.1]
+                  colWidths=[0.1,0.1],
+				  loc='left'
                  ).scale(1,2)
     except:
         pass
